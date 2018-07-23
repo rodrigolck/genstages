@@ -5,14 +5,13 @@ defmodule Genstages.Application do
   # for more information on OTP Applications
   def start(_type, _args) do
     import Supervisor.Spec
-
     # Define workers and child supervisors to be supervised
     children = [
       # Start the endpoint when the application starts
       supervisor(GenstagesWeb.Endpoint, []),
       # Start your own worker by calling: Genstages.Worker.start_link(arg1, arg2, arg3)
       # worker(Genstages.Worker, [arg1, arg2, arg3]),
-    ]
+    ] ++ scenario_workers(Application.get_env(:genstages, :scenario))
 
     # See https://hexdocs.pm/elixir/Supervisor.html
     # for other strategies and supported options
@@ -26,4 +25,22 @@ defmodule Genstages.Application do
     GenstagesWeb.Endpoint.config_change(changed, removed)
     :ok
   end
+
+  def scenario_workers("P-C") do
+    import Supervisor.Spec
+    [
+      worker(Genstages.Samples.Producer, []),
+      worker(Genstages.Samples.Consumer, [])
+    ]
+  end
+
+  def scenario_workers("P-PC-C") do
+    import Supervisor.Spec
+    [
+      worker(Genstages.Samples.Producer, []),
+      worker(Genstages.Samples.ProducerConsumer, []),
+      worker(Genstages.Samples.Consumer, [])
+    ]
+  end
+
 end
