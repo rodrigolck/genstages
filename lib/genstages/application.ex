@@ -43,4 +43,24 @@ defmodule Genstages.Application do
     ]
   end
 
+  def scenario_workers("P-CS") do
+    import Supervisor.Spec
+    [
+      worker(Genstages.Samples.Producer, []),
+      worker(Genstages.Samples.ConsumerSupervisor, [])
+    ]
+  end
+
+  def scenario_workers("B-C") do
+    import Supervisor.Spec
+    [
+      worker(Genstages.Samples.Broadcaster, []),
+      worker(Genstages.Samples.Consumer, [], id: 1),
+      worker(Genstages.Samples.Consumer, [], id: 2),
+      worker(Genstages.Samples.Consumer, [], id: 3),
+      worker(Genstages.Samples.Consumer, [], id: 4),
+      worker(Genstages.Samples.Consumer, [], id: 5)
+    ]
+  end
+
 end

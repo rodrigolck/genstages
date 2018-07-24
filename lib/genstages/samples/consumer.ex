@@ -1,8 +1,12 @@
 defmodule Genstages.Samples.Consumer do
   use GenStage
 
-  def start_link(initial \\ :ok) do
-    GenStage.start_link(__MODULE__, initial, name: __MODULE__)
+  def start_link(event) do
+    Task.start_link(__MODULE__, :handle_events, [[event], :from, :ok])
+  end
+
+  def start_link() do
+    GenStage.start_link(__MODULE__, :ok)
   end
 
   def init(_) do
@@ -16,7 +20,8 @@ defmodule Genstages.Samples.Consumer do
     :timer.sleep(10000)
 
     # Inspect the events.
-    IO.puts "Stage Consumer: #{length(events)}"
+    IO.puts "Stage Consumer Length: #{length(events)}"
+    IO.puts "Stage Consumer Value: #{events}"
 
     # We are a consumer, so we would never emit items.
     {:noreply, [], :ok}
@@ -25,6 +30,7 @@ defmodule Genstages.Samples.Consumer do
   defp subscribes() do
     case scenario() do
       "P-C" -> [Genstages.Samples.Producer]
+      "B-C" -> [{Genstages.Samples.Broadcaster, selector: fn key -> String.starts_with?(key, "iex-") end}]
       _ -> [Genstages.Samples.ProducerConsumer]
     end
   end
