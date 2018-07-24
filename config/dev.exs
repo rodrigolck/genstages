@@ -37,4 +37,4 @@ config :logger, :console, format: "[$level] $message\n"
 config :phoenix, :stacktrace_depth, 20
 
 # Possible scenarios: ["P-C", "P-PC-C", "P-CS", "B-C"]
-config :genstages, :scenario, "B-C"
+config :genstages, :scenario, "P-C"

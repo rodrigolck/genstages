@@ -17,11 +17,13 @@ defmodule Genstages.Samples.Consumer do
     # Wait for a second.
     IO.puts "Start Stage Consumer"
 
-    :timer.sleep(10000)
+    :timer.sleep(5000)
+
+    # if Enum.member?(events, 21), do: 1 = 1 + 1
 
     # Inspect the events.
     IO.puts "Stage Consumer Length: #{length(events)}"
-    IO.puts "Stage Consumer Value: #{events}"
+    IO.puts "Stage Consumer Value: #{inspect(events, charlists: :as_lists)}"
 
     # We are a consumer, so we would never emit items.
     {:noreply, [], :ok}
@@ -29,7 +31,7 @@ defmodule Genstages.Samples.Consumer do
 
   defp subscribes() do
     case scenario() do
-      "P-C" -> [Genstages.Samples.Producer]
+      "P-C" -> [{Genstages.Samples.Producer, max_demand: 10, min_demand: 1 }]
       "B-C" -> [{Genstages.Samples.Broadcaster, selector: fn key -> String.starts_with?(key, "iex-") end}]
       _ -> [Genstages.Samples.ProducerConsumer]
     end
