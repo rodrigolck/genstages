@@ -23,3 +23,11 @@ GenStage.sync_subscribe(c, to: b)
 ```
 
   It is much wiser to create Workers into the application, so that in case one fails, it will imediately be recreated.
+
+
+```elixir
+for x <- 1..100 do
+  Genstages.RabbitMQ.Client.publish(x)
+end
+```
+
