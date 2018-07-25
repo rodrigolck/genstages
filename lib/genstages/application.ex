@@ -9,7 +9,6 @@ defmodule Genstages.Application do
     children = [
       # Start the endpoint when the application starts
       supervisor(GenstagesWeb.Endpoint, []),
-      supervisor(Genstages.RabbitMQ.Supervisor, []),
       worker(Genstages.Samples.ConsumerMonitor, [])
       # Start your own worker by calling: Genstages.Worker.start_link(arg1, arg2, arg3)
       # worker(Genstages.Worker, [arg1, arg2, arg3]),
@@ -68,6 +67,7 @@ defmodule Genstages.Application do
   def scenario_workers("RMQP-CS") do
     import Supervisor.Spec
     [
+      supervisor(Genstages.RabbitMQ.Supervisor, []),
       worker(Genstages.Samples.RabbitMQProducer, []),
       worker(Genstages.Samples.ConsumerSupervisor, [])
     ]
