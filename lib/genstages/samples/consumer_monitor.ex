@@ -31,7 +31,10 @@ defmodule Genstages.Samples.ConsumerMonitor do
   def handle_info({:DOWN, _, :process, pid, :normal}, state),
     do: {:noreply, remove_pid(state, pid)}
   def handle_info({:DOWN, _, :process, pid, _}, state) do
-    IO.puts "OMG! Message: #{inspect(Map.get(state, pid), charlists: :as_lists)} is with problems!"
+    events = Map.get(state, pid)
+    events = if is_list(events), do: events, else: [events]
+    IO.puts "OMG! Message: #{inspect(events, charlists: :as_lists)} is with problems!"
+    Enum.each(events, fn event -> Genstages.RabbitMQ.Client.publish_retry(event) end)
     {:noreply, remove_pid(state, pid)}
   end
 

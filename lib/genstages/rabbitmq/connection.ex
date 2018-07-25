@@ -18,9 +18,13 @@ defmodule Genstages.RabbitMQ.Connection do
       {:ok, conn} ->
         Process.monitor(conn.pid) # Get notifications when the connection goes down
         {:ok, chan} = AMQP.Channel.open(conn)
+        # This needs to be ran only once
         AMQP.Queue.declare chan, "genstages_queue"
         AMQP.Exchange.declare chan, "genstages_exchange"
         AMQP.Queue.bind chan, "genstages_queue", "genstages_exchange"
+        AMQP.Queue.declare chan, "genstages_retry_queue"
+        AMQP.Exchange.declare chan, "genstages_retry_exchange"
+        AMQP.Queue.bind chan, "genstages_retry_queue", "genstages_retry_exchange"
         conn
       {:error, _} ->
         :timer.sleep(2_000)

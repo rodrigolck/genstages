@@ -17,8 +17,17 @@ defmodule Genstages.RabbitMQ.Client do
     GenServer.cast(__MODULE__, {:publish, event})
   end
 
+  def publish_retry(event) do
+    GenServer.cast(__MODULE__, {:publish_retry, event})
+  end
+
   def handle_cast({:publish, event}, channel) do
     AMQP.Basic.publish(channel, "genstages_exchange", "", Poison.encode!(event))
+    {:noreply, channel}
+  end
+
+  def handle_cast({:publish_retry, event}, channel) do
+    AMQP.Basic.publish(channel, "genstages_retry_exchange", "", Poison.encode!(event))
     {:noreply, channel}
   end
 

@@ -73,4 +73,8 @@ defmodule Genstages.Application do
     ]
   end
 
+  def scenario_workers(_) do
+    []
+  end
+
 end
