@@ -17,6 +17,15 @@ defmodule Genstages.Samples.ConsumerSupervisor do
       worker(Genstages.Samples.Consumer, [], restart: :temporary)
     ]
 
-    {:ok, children, strategy: :one_for_one, subscribe_to: [{Genstages.Samples.Producer, max_demand: 10}]}
+    {:ok, children, strategy: :one_for_one, subscribe_to: [{subscribes(), min_demand: 1, max_demand: 10}]}
   end
+
+  defp subscribes() do
+    case scenario() do
+      "RMQP-CS" -> Genstages.Samples.RabbitMQProducer
+      _ -> Genstages.Samples.Producer
+    end
+  end
+
+  defp scenario(), do: Application.get_env(:genstages, :scenario)
 end

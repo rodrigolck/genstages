@@ -1,0 +1,972 @@
+2018-07-25 00:05:52.995 [error] <0.207.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':start_link({error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}) at <0.212.0> exit with reason normal in context child_terminated
+2018-07-25 00:05:53.157 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-07-25 00:05:53.164 [info] <0.33.0> Application xmerl started on node nonode@nohost
+2018-07-25 00:05:53.169 [info] <0.33.0> Application jsx started on node nonode@nohost
+2018-07-25 00:05:53.171 [info] <0.33.0> Application ranch_proxy_protocol started on node nonode@nohost
+2018-07-25 00:05:53.173 [info] <0.33.0> Application recon started on node nonode@nohost
+2018-07-25 00:05:53.173 [info] <0.33.0> Application rabbit_common started on node nonode@nohost
+2018-07-25 00:05:53.181 [info] <0.33.0> Application amqp_client started on node nonode@nohost
+2018-07-25 00:05:53.182 [info] <0.33.0> Application amqp started on node nonode@nohost
+2018-07-25 00:05:53.254 [error] <0.285.0> Supervisor 'Elixir.Genstages.RabbitMQ.Supervisor' had child 'Elixir.Genstages.RabbitMQ.Publisher' started with 'Elixir.Genstages.RabbitMQ.Publisher':start_link() at undefined exit with reason {'EXIT',{undef,[{'Elixir.Genstages.RabbitMQ.Publisher',start_link,[],[]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}} in context start_error
+2018-07-25 00:05:53.255 [error] <0.274.0> Supervisor 'Elixir.Genstages.Supervisor' had child 'Elixir.Genstages.RabbitMQ.Supervisor' started with 'Elixir.Genstages.RabbitMQ.Supervisor':start_link() at undefined exit with reason {shutdown,{failed_to_start_child,'Elixir.Genstages.RabbitMQ.Publisher',{'EXIT',{undef,[{'Elixir.Genstages.RabbitMQ.Publisher',start_link,[],[]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,...},...]}]}}}} in context start_error
+2018-07-25 00:05:53.255 [error] <0.272.0> CRASH REPORT Process <0.272.0> with 0 neighbours exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Genstages.RabbitMQ.Supervisor',{shutdown,{failed_to_start_child,'Elixir.Genstages.RabbitMQ.Publisher',{'EXIT',{undef,[{'Elixir.Genstages.RabbitMQ.Publisher',start_link,[],[]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,...},...]}}}}}},...} in application_master:init/4 line 134
+2018-07-25 00:06:23.786 [error] <0.198.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':start_link({error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}) at <0.203.0> exit with reason normal in context child_terminated
+2018-07-25 00:06:23.895 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-07-25 00:06:23.900 [info] <0.33.0> Application xmerl started on node nonode@nohost
+2018-07-25 00:06:23.902 [info] <0.33.0> Application jsx started on node nonode@nohost
+2018-07-25 00:06:23.904 [info] <0.33.0> Application ranch_proxy_protocol started on node nonode@nohost
+2018-07-25 00:06:23.906 [info] <0.33.0> Application recon started on node nonode@nohost
+2018-07-25 00:06:23.906 [info] <0.33.0> Application rabbit_common started on node nonode@nohost
+2018-07-25 00:06:23.911 [info] <0.33.0> Application amqp_client started on node nonode@nohost
+2018-07-25 00:06:23.911 [info] <0.33.0> Application amqp started on node nonode@nohost
+2018-07-25 00:06:23.982 [error] <0.276.0> Supervisor 'Elixir.Genstages.RabbitMQ.Supervisor' had child 'Elixir.Genstages.RabbitMQ.Publisher' started with 'Elixir.Genstages.RabbitMQ.Publisher':start_link() at undefined exit with reason {'EXIT',{undef,[{'Elixir.Genstages.RabbitMQ.Publisher',start_link,[],[]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}} in context start_error
+2018-07-25 00:06:23.982 [error] <0.265.0> Supervisor 'Elixir.Genstages.Supervisor' had child 'Elixir.Genstages.RabbitMQ.Supervisor' started with 'Elixir.Genstages.RabbitMQ.Supervisor':start_link() at undefined exit with reason {shutdown,{failed_to_start_child,'Elixir.Genstages.RabbitMQ.Publisher',{'EXIT',{undef,[{'Elixir.Genstages.RabbitMQ.Publisher',start_link,[],[]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,...},...]}]}}}} in context start_error
+2018-07-25 00:06:23.983 [error] <0.263.0> CRASH REPORT Process <0.263.0> with 0 neighbours exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Genstages.RabbitMQ.Supervisor',{shutdown,{failed_to_start_child,'Elixir.Genstages.RabbitMQ.Publisher',{'EXIT',{undef,[{'Elixir.Genstages.RabbitMQ.Publisher',start_link,[],[]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,...},...]}}}}}},...} in application_master:init/4 line 134
+2018-07-25 00:06:42.758 [error] <0.206.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':start_link({error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}) at <0.211.0> exit with reason normal in context child_terminated
+2018-07-25 00:06:42.857 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-07-25 00:06:42.861 [info] <0.33.0> Application xmerl started on node nonode@nohost
+2018-07-25 00:06:42.863 [info] <0.33.0> Application jsx started on node nonode@nohost
+2018-07-25 00:06:42.864 [info] <0.33.0> Application ranch_proxy_protocol started on node nonode@nohost
+2018-07-25 00:06:42.866 [info] <0.33.0> Application recon started on node nonode@nohost
+2018-07-25 00:06:42.866 [info] <0.33.0> Application rabbit_common started on node nonode@nohost
+2018-07-25 00:06:42.872 [info] <0.33.0> Application amqp_client started on node nonode@nohost
+2018-07-25 00:06:42.872 [info] <0.33.0> Application amqp started on node nonode@nohost
+2018-07-25 00:06:42.947 [info] <0.33.0> Application genstages started on node nonode@nohost
+2018-07-25 00:07:32.178 [error] <0.297.0>@gen_server:call gen_server 'Elixir.Genstages.RabbitMQ.Client' terminated with reason: no such process or port in call to gen_server:call(<0.300.0>, {call,{'basic.get',0,<<"genstages">>,false},none,<0.297.0>}, 60000) in gen_server:call/3 line 214
+2018-07-25 00:07:32.178 [error] <0.297.0>@gen_server:call CRASH REPORT Process 'Elixir.Genstages.RabbitMQ.Client' with 0 neighbours exited with reason: no such process or port in call to gen_server:call(<0.300.0>, {call,{'basic.get',0,<<"genstages">>,false},none,<0.297.0>}, 60000) in gen_server:call/3 line 214
+2018-07-25 00:07:32.178 [error] <0.284.0>@gen_server:call Supervisor 'Elixir.Genstages.RabbitMQ.Supervisor' had child 'Elixir.Genstages.RabbitMQ.Client' started with 'Elixir.Genstages.RabbitMQ.Client':start_link() at <0.297.0> exit with reason no such process or port in call to gen_server:call(<0.300.0>, {call,{'basic.get',0,<<"genstages">>,false},none,<0.297.0>}, 60000) in context child_terminated
+2018-07-25 00:07:44.898 [error] <0.311.0> gen_server 'Elixir.Genstages.RabbitMQ.Client' terminated with reason: {{shutdown,{server_initiated_close,404,<<"NOT_FOUND - no queue 'genstages' in vhost '/'">>}},{gen_server,call,[<0.314.0>,{call,{'basic.get',0,<<"genstages">>,false},none,<0.311.0>},60000]}} in gen_server:call/3 line 214
+2018-07-25 00:07:44.898 [error] <0.311.0> CRASH REPORT Process 'Elixir.Genstages.RabbitMQ.Client' with 0 neighbours exited with reason: {{shutdown,{server_initiated_close,404,<<"NOT_FOUND - no queue 'genstages' in vhost '/'">>}},{gen_server,call,[<0.314.0>,{call,{'basic.get',0,<<"genstages">>,false},none,<0.311.0>},60000]}} in gen_server:call/3 line 214
+2018-07-25 00:07:44.899 [error] <0.284.0> Supervisor 'Elixir.Genstages.RabbitMQ.Supervisor' had child 'Elixir.Genstages.RabbitMQ.Client' started with 'Elixir.Genstages.RabbitMQ.Client':start_link() at <0.311.0> exit with reason {{shutdown,{server_initiated_close,404,<<"NOT_FOUND - no queue 'genstages' in vhost '/'">>}},{gen_server,call,[<0.314.0>,{call,{'basic.get',0,<<"genstages">>,false},none,<0.311.0>},60000]}} in context child_terminated
+2018-07-25 00:09:32.044 [error] <0.317.0> gen_server 'Elixir.Genstages.RabbitMQ.Client' terminated with reason: {{shutdown,{server_initiated_close,404,<<"NOT_FOUND - no queue 'genstages' in vhost '/'">>}},{gen_server,call,[<0.320.0>,{call,{'basic.get',0,<<"genstages">>,false},none,<0.317.0>},60000]}} in gen_server:call/3 line 214
+2018-07-25 00:09:32.046 [error] <0.317.0> CRASH REPORT Process 'Elixir.Genstages.RabbitMQ.Client' with 0 neighbours exited with reason: {{shutdown,{server_initiated_close,404,<<"NOT_FOUND - no queue 'genstages' in vhost '/'">>}},{gen_server,call,[<0.320.0>,{call,{'basic.get',0,<<"genstages">>,false},none,<0.317.0>},60000]}} in gen_server:call/3 line 214
+2018-07-25 00:09:32.048 [error] <0.284.0> Supervisor 'Elixir.Genstages.RabbitMQ.Supervisor' had child 'Elixir.Genstages.RabbitMQ.Client' started with 'Elixir.Genstages.RabbitMQ.Client':start_link() at <0.317.0> exit with reason {{shutdown,{server_initiated_close,404,<<"NOT_FOUND - no queue 'genstages' in vhost '/'">>}},{gen_server,call,[<0.320.0>,{call,{'basic.get',0,<<"genstages">>,false},none,<0.317.0>},60000]}} in context child_terminated
+2018-07-25 00:09:37.498 [error] <0.324.0>@gen_server:call gen_server 'Elixir.Genstages.RabbitMQ.Client' terminated with reason: no such process or port in call to gen_server:call(<0.327.0>, {call,{'basic.get',0,<<"genstages">>,false},none,<0.324.0>}, 60000) in gen_server:call/3 line 214
+2018-07-25 00:09:37.498 [error] <0.324.0>@gen_server:call CRASH REPORT Process 'Elixir.Genstages.RabbitMQ.Client' with 0 neighbours exited with reason: no such process or port in call to gen_server:call(<0.327.0>, {call,{'basic.get',0,<<"genstages">>,false},none,<0.324.0>}, 60000) in gen_server:call/3 line 214
+2018-07-25 00:09:37.499 [error] <0.284.0>@gen_server:call Supervisor 'Elixir.Genstages.RabbitMQ.Supervisor' had child 'Elixir.Genstages.RabbitMQ.Client' started with 'Elixir.Genstages.RabbitMQ.Client':start_link() at <0.324.0> exit with reason no such process or port in call to gen_server:call(<0.327.0>, {call,{'basic.get',0,<<"genstages">>,false},none,<0.324.0>}, 60000) in context child_terminated
+2018-07-25 00:13:14.777 [error] <0.330.0>@gen_server:call gen_server 'Elixir.Genstages.RabbitMQ.Client' terminated with reason: no such process or port in call to gen_server:call(<0.334.0>, {call,{'basic.get',0,<<"genstages">>,false},none,<0.330.0>}, 60000) in gen_server:call/3 line 214
+2018-07-25 00:13:14.783 [error] <0.330.0>@gen_server:call CRASH REPORT Process 'Elixir.Genstages.RabbitMQ.Client' with 0 neighbours exited with reason: no such process or port in call to gen_server:call(<0.334.0>, {call,{'basic.get',0,<<"genstages">>,false},none,<0.330.0>}, 60000) in gen_server:call/3 line 214
+2018-07-25 00:13:14.785 [error] <0.284.0>@gen_server:call Supervisor 'Elixir.Genstages.RabbitMQ.Supervisor' had child 'Elixir.Genstages.RabbitMQ.Client' started with 'Elixir.Genstages.RabbitMQ.Client':start_link() at <0.330.0> exit with reason no such process or port in call to gen_server:call(<0.334.0>, {call,{'basic.get',0,<<"genstages">>,false},none,<0.330.0>}, 60000) in context child_terminated
+2018-07-25 00:13:23.156 [error] <0.340.0> gen_server 'Elixir.Genstages.RabbitMQ.Client' terminated with reason: {{shutdown,{server_initiated_close,404,<<"NOT_FOUND - no queue 'genstages' in vhost '/'">>}},{gen_server,call,[<0.343.0>,{call,{'basic.get',0,<<"genstages">>,false},none,<0.340.0>},60000]}} in gen_server:call/3 line 214
+2018-07-25 00:13:23.157 [error] <0.340.0> CRASH REPORT Process 'Elixir.Genstages.RabbitMQ.Client' with 0 neighbours exited with reason: {{shutdown,{server_initiated_close,404,<<"NOT_FOUND - no queue 'genstages' in vhost '/'">>}},{gen_server,call,[<0.343.0>,{call,{'basic.get',0,<<"genstages">>,false},none,<0.340.0>},60000]}} in gen_server:call/3 line 214
+2018-07-25 00:13:23.158 [error] <0.284.0> Supervisor 'Elixir.Genstages.RabbitMQ.Supervisor' had child 'Elixir.Genstages.RabbitMQ.Client' started with 'Elixir.Genstages.RabbitMQ.Client':start_link() at <0.340.0> exit with reason {{shutdown,{server_initiated_close,404,<<"NOT_FOUND - no queue 'genstages' in vhost '/'">>}},{gen_server,call,[<0.343.0>,{call,{'basic.get',0,<<"genstages">>,false},none,<0.340.0>},60000]}} in context child_terminated
+2018-07-25 00:22:53.434 [error] <0.212.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':start_link({error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}) at <0.217.0> exit with reason normal in context child_terminated
+2018-07-25 00:22:53.518 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-07-25 00:22:53.524 [info] <0.33.0> Application xmerl started on node nonode@nohost
+2018-07-25 00:22:53.527 [info] <0.33.0> Application jsx started on node nonode@nohost
+2018-07-25 00:22:53.529 [info] <0.33.0> Application ranch_proxy_protocol started on node nonode@nohost
+2018-07-25 00:22:53.530 [info] <0.33.0> Application recon started on node nonode@nohost
+2018-07-25 00:22:53.530 [info] <0.33.0> Application rabbit_common started on node nonode@nohost
+2018-07-25 00:22:53.537 [info] <0.33.0> Application amqp_client started on node nonode@nohost
+2018-07-25 00:22:53.537 [info] <0.33.0> Application amqp started on node nonode@nohost
+2018-07-25 00:22:53.707 [info] <0.33.0> Application genstages started on node nonode@nohost
+2018-07-25 00:23:25.624 [error] <0.307.0> gen_server 'Elixir.Genstages.RabbitMQ.Client' terminated with reason: bad return value: {reply,{ok,<<"\"WOW1\"">>,#{app_id => undefined,cluster_id => undefined,content_encoding => undefined,content_type => undefined,correlation_id => undefined,delivery_tag => 2,exchange => <<"genstages_exchange">>,expiration => undefined,headers => undefined,message_count => 2,message_id => undefined,persistent => false,priority => undefined,redelivered => false,reply_to => undefined,routing_key => <<>>,timestamp => undefined,type => undefined,user_id => undefined}},#{'__struct__' => 'Elixir.AMQP.Channel',...}}
+2018-07-25 00:23:25.624 [error] <0.307.0>@gen_server:handle_common_reply:730 CRASH REPORT Process 'Elixir.Genstages.RabbitMQ.Client' with 0 neighbours exited with reason: bad return value: {reply,{ok,<<"\"WOW1\"">>,#{app_id => undefined,cluster_id => undefined,content_encoding => undefined,content_type => undefined,correlation_id => undefined,delivery_tag => 2,exchange => <<"genstages_exchange">>,expiration => undefined,headers => undefined,message_count => 2,message_id => undefined,persistent => false,priority => undefined,redelivered => false,reply_to => undefined,routing_key => <<>>,timestamp => undefined,type => undefined,user_id => undefined}},#{'__struct__' => 'Elixir.AMQP.Channel',...}} in gen_server:handle_common_reply/8 line 730
+2018-07-25 00:23:25.626 [error] <0.290.0> Supervisor 'Elixir.Genstages.RabbitMQ.Supervisor' had child 'Elixir.Genstages.RabbitMQ.Client' started with 'Elixir.Genstages.RabbitMQ.Client':start_link() at <0.307.0> exit with reason bad return value: {reply,{ok,<<"\"WOW1\"">>,#{app_id => undefined,cluster_id => undefined,content_encoding => undefined,content_type => undefined,correlation_id => undefined,delivery_tag => 2,exchange => <<"genstages_exchange">>,expiration => undefined,headers => undefined,message_count => 2,message_id => undefined,persistent => false,priority => undefined,redelivered => false,reply_to => undefined,routing_key => <<>>,timestamp => undefined,type => undefined,user_id => undefined}},#{'__struct__' => 'Elixir.AMQP.Channel',...}} in context child_terminated
+2018-07-25 00:24:17.275 [error] <0.206.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':start_link({error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}) at <0.211.0> exit with reason normal in context child_terminated
+2018-07-25 00:24:17.419 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-07-25 00:24:17.431 [info] <0.33.0> Application xmerl started on node nonode@nohost
+2018-07-25 00:24:17.440 [info] <0.33.0> Application jsx started on node nonode@nohost
+2018-07-25 00:24:17.446 [info] <0.33.0> Application ranch_proxy_protocol started on node nonode@nohost
+2018-07-25 00:24:17.450 [info] <0.33.0> Application recon started on node nonode@nohost
+2018-07-25 00:24:17.450 [info] <0.33.0> Application rabbit_common started on node nonode@nohost
+2018-07-25 00:24:17.462 [info] <0.33.0> Application amqp_client started on node nonode@nohost
+2018-07-25 00:24:17.462 [info] <0.33.0> Application amqp started on node nonode@nohost
+2018-07-25 00:24:17.548 [info] <0.33.0> Application genstages started on node nonode@nohost
+2018-07-25 00:24:33.255 [error] <0.301.0> gen_server 'Elixir.Genstages.RabbitMQ.Client' terminated with reason: bad return value: {reply,<<"\"WOW\"">>,#{'__struct__' => 'Elixir.AMQP.Channel',conn => #{'__struct__' => 'Elixir.AMQP.Connection',pid => <0.288.0>},pid => <0.304.0>}}
+2018-07-25 00:24:33.255 [error] <0.301.0>@gen_server:handle_common_reply:730 CRASH REPORT Process 'Elixir.Genstages.RabbitMQ.Client' with 0 neighbours exited with reason: bad return value: {reply,<<"\"WOW\"">>,#{'__struct__' => 'Elixir.AMQP.Channel',conn => #{'__struct__' => 'Elixir.AMQP.Connection',pid => <0.288.0>},pid => <0.304.0>}} in gen_server:handle_common_reply/8 line 730
+2018-07-25 00:24:33.255 [error] <0.284.0> Supervisor 'Elixir.Genstages.RabbitMQ.Supervisor' had child 'Elixir.Genstages.RabbitMQ.Client' started with 'Elixir.Genstages.RabbitMQ.Client':start_link() at <0.301.0> exit with reason bad return value: {reply,<<"\"WOW\"">>,#{'__struct__' => 'Elixir.AMQP.Channel',conn => #{'__struct__' => 'Elixir.AMQP.Connection',pid => <0.288.0>},pid => <0.304.0>}} in context child_terminated
+2018-07-25 00:25:02.948 [error] <0.206.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':start_link({error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}) at <0.211.0> exit with reason normal in context child_terminated
+2018-07-25 00:25:03.070 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-07-25 00:25:03.076 [info] <0.33.0> Application xmerl started on node nonode@nohost
+2018-07-25 00:25:03.079 [info] <0.33.0> Application jsx started on node nonode@nohost
+2018-07-25 00:25:03.082 [info] <0.33.0> Application ranch_proxy_protocol started on node nonode@nohost
+2018-07-25 00:25:03.083 [info] <0.33.0> Application recon started on node nonode@nohost
+2018-07-25 00:25:03.084 [info] <0.33.0> Application rabbit_common started on node nonode@nohost
+2018-07-25 00:25:03.091 [info] <0.33.0> Application amqp_client started on node nonode@nohost
+2018-07-25 00:25:03.091 [info] <0.33.0> Application amqp started on node nonode@nohost
+2018-07-25 00:25:03.187 [info] <0.33.0> Application genstages started on node nonode@nohost
+2018-07-25 00:25:11.797 [error] <0.301.0> gen_server 'Elixir.Genstages.RabbitMQ.Client' terminated with reason: bad return value: {reply,<<"\"WOW\"">>,#{'__struct__' => 'Elixir.AMQP.Channel',conn => #{'__struct__' => 'Elixir.AMQP.Connection',pid => <0.288.0>},pid => <0.304.0>}}
+2018-07-25 00:25:11.797 [error] <0.301.0>@gen_server:handle_common_reply:730 CRASH REPORT Process 'Elixir.Genstages.RabbitMQ.Client' with 0 neighbours exited with reason: bad return value: {reply,<<"\"WOW\"">>,#{'__struct__' => 'Elixir.AMQP.Channel',conn => #{'__struct__' => 'Elixir.AMQP.Connection',pid => <0.288.0>},pid => <0.304.0>}} in gen_server:handle_common_reply/8 line 730
+2018-07-25 00:25:11.797 [error] <0.284.0> Supervisor 'Elixir.Genstages.RabbitMQ.Supervisor' had child 'Elixir.Genstages.RabbitMQ.Client' started with 'Elixir.Genstages.RabbitMQ.Client':start_link() at <0.301.0> exit with reason bad return value: {reply,<<"\"WOW\"">>,#{'__struct__' => 'Elixir.AMQP.Channel',conn => #{'__struct__' => 'Elixir.AMQP.Connection',pid => <0.288.0>},pid => <0.304.0>}} in context child_terminated
+2018-07-25 00:26:04.996 [error] <0.206.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':start_link({error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}) at <0.211.0> exit with reason normal in context child_terminated
+2018-07-25 00:26:05.103 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-07-25 00:26:05.107 [info] <0.33.0> Application xmerl started on node nonode@nohost
+2018-07-25 00:26:05.110 [info] <0.33.0> Application jsx started on node nonode@nohost
+2018-07-25 00:26:05.111 [info] <0.33.0> Application ranch_proxy_protocol started on node nonode@nohost
+2018-07-25 00:26:05.113 [info] <0.33.0> Application recon started on node nonode@nohost
+2018-07-25 00:26:05.113 [info] <0.33.0> Application rabbit_common started on node nonode@nohost
+2018-07-25 00:26:05.121 [info] <0.33.0> Application amqp_client started on node nonode@nohost
+2018-07-25 00:26:05.121 [info] <0.33.0> Application amqp started on node nonode@nohost
+2018-07-25 00:26:05.200 [info] <0.33.0> Application genstages started on node nonode@nohost
+2018-07-25 00:27:32.852 [error] <0.206.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':start_link({error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}) at <0.211.0> exit with reason normal in context child_terminated
+2018-07-25 00:27:32.946 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-07-25 00:27:32.950 [info] <0.33.0> Application xmerl started on node nonode@nohost
+2018-07-25 00:27:32.952 [info] <0.33.0> Application jsx started on node nonode@nohost
+2018-07-25 00:27:32.954 [info] <0.33.0> Application ranch_proxy_protocol started on node nonode@nohost
+2018-07-25 00:27:32.955 [info] <0.33.0> Application recon started on node nonode@nohost
+2018-07-25 00:27:32.955 [info] <0.33.0> Application rabbit_common started on node nonode@nohost
+2018-07-25 00:27:32.961 [info] <0.33.0> Application amqp_client started on node nonode@nohost
+2018-07-25 00:27:32.961 [info] <0.33.0> Application amqp started on node nonode@nohost
+2018-07-25 00:27:33.066 [info] <0.33.0> Application genstages started on node nonode@nohost
+2018-07-25 00:27:49.875 [error] <0.301.0>@Elixir.Genstages.RabbitMQ.Client:handle_call:26 gen_server 'Elixir.Genstages.RabbitMQ.Client' terminated with reason: no match of right hand value {empty,#{cluster_id => <<>>}} in 'Elixir.Genstages.RabbitMQ.Client':handle_call/3 line 26
+2018-07-25 00:27:49.876 [error] <0.301.0>@Elixir.Genstages.RabbitMQ.Client:handle_call:26 CRASH REPORT Process 'Elixir.Genstages.RabbitMQ.Client' with 0 neighbours crashed with reason: no match of right hand value {empty,#{cluster_id => <<>>}} in 'Elixir.Genstages.RabbitMQ.Client':handle_call/3 line 26
+2018-07-25 00:27:49.876 [error] <0.284.0>@Elixir.Genstages.RabbitMQ.Client:handle_call:26 Supervisor 'Elixir.Genstages.RabbitMQ.Supervisor' had child 'Elixir.Genstages.RabbitMQ.Client' started with 'Elixir.Genstages.RabbitMQ.Client':start_link() at <0.301.0> exit with reason no match of right hand value {empty,#{cluster_id => <<>>}} in 'Elixir.Genstages.RabbitMQ.Client':handle_call/3 line 26 in context child_terminated
+2018-07-25 00:27:50.908 [error] <0.314.0>@Elixir.Genstages.RabbitMQ.Client:handle_call:26 gen_server 'Elixir.Genstages.RabbitMQ.Client' terminated with reason: no match of right hand value {empty,#{cluster_id => <<>>}} in 'Elixir.Genstages.RabbitMQ.Client':handle_call/3 line 26
+2018-07-25 00:27:50.909 [error] <0.314.0>@Elixir.Genstages.RabbitMQ.Client:handle_call:26 CRASH REPORT Process 'Elixir.Genstages.RabbitMQ.Client' with 0 neighbours crashed with reason: no match of right hand value {empty,#{cluster_id => <<>>}} in 'Elixir.Genstages.RabbitMQ.Client':handle_call/3 line 26
+2018-07-25 00:27:50.910 [error] <0.284.0>@Elixir.Genstages.RabbitMQ.Client:handle_call:26 Supervisor 'Elixir.Genstages.RabbitMQ.Supervisor' had child 'Elixir.Genstages.RabbitMQ.Client' started with 'Elixir.Genstages.RabbitMQ.Client':start_link() at <0.314.0> exit with reason no match of right hand value {empty,#{cluster_id => <<>>}} in 'Elixir.Genstages.RabbitMQ.Client':handle_call/3 line 26 in context child_terminated
+2018-07-25 00:27:51.464 [error] <0.320.0>@Elixir.Genstages.RabbitMQ.Client:handle_call:26 gen_server 'Elixir.Genstages.RabbitMQ.Client' terminated with reason: no match of right hand value {empty,#{cluster_id => <<>>}} in 'Elixir.Genstages.RabbitMQ.Client':handle_call/3 line 26
+2018-07-25 00:27:51.464 [error] <0.320.0>@Elixir.Genstages.RabbitMQ.Client:handle_call:26 CRASH REPORT Process 'Elixir.Genstages.RabbitMQ.Client' with 0 neighbours crashed with reason: no match of right hand value {empty,#{cluster_id => <<>>}} in 'Elixir.Genstages.RabbitMQ.Client':handle_call/3 line 26
+2018-07-25 00:27:51.464 [error] <0.284.0>@Elixir.Genstages.RabbitMQ.Client:handle_call:26 Supervisor 'Elixir.Genstages.RabbitMQ.Supervisor' had child 'Elixir.Genstages.RabbitMQ.Client' started with 'Elixir.Genstages.RabbitMQ.Client':start_link() at <0.320.0> exit with reason no match of right hand value {empty,#{cluster_id => <<>>}} in 'Elixir.Genstages.RabbitMQ.Client':handle_call/3 line 26 in context child_terminated
+2018-07-25 00:27:51.956 [error] <0.326.0>@Elixir.Genstages.RabbitMQ.Client:handle_call:26 gen_server 'Elixir.Genstages.RabbitMQ.Client' terminated with reason: no match of right hand value {empty,#{cluster_id => <<>>}} in 'Elixir.Genstages.RabbitMQ.Client':handle_call/3 line 26
+2018-07-25 00:27:51.957 [error] <0.326.0>@Elixir.Genstages.RabbitMQ.Client:handle_call:26 CRASH REPORT Process 'Elixir.Genstages.RabbitMQ.Client' with 0 neighbours crashed with reason: no match of right hand value {empty,#{cluster_id => <<>>}} in 'Elixir.Genstages.RabbitMQ.Client':handle_call/3 line 26
+2018-07-25 00:27:51.957 [error] <0.284.0>@Elixir.Genstages.RabbitMQ.Client:handle_call:26 Supervisor 'Elixir.Genstages.RabbitMQ.Supervisor' had child 'Elixir.Genstages.RabbitMQ.Client' started with 'Elixir.Genstages.RabbitMQ.Client':start_link() at <0.326.0> exit with reason no match of right hand value {empty,#{cluster_id => <<>>}} in 'Elixir.Genstages.RabbitMQ.Client':handle_call/3 line 26 in context child_terminated
+2018-07-25 00:27:51.957 [error] <0.284.0> Supervisor 'Elixir.Genstages.RabbitMQ.Supervisor' had child 'Elixir.Genstages.RabbitMQ.Client' started with 'Elixir.Genstages.RabbitMQ.Client':start_link() at <0.326.0> exit with reason reached_max_restart_intensity in context shutdown
+2018-07-25 00:27:51.958 [error] <0.273.0> Supervisor 'Elixir.Genstages.Supervisor' had child 'Elixir.Genstages.RabbitMQ.Supervisor' started with 'Elixir.Genstages.RabbitMQ.Supervisor':start_link() at <0.284.0> exit with reason shutdown in context child_terminated
+2018-07-25 00:27:52.434 [error] <0.348.0>@Elixir.Genstages.RabbitMQ.Client:handle_call:26 gen_server 'Elixir.Genstages.RabbitMQ.Client' terminated with reason: no match of right hand value {empty,#{cluster_id => <<>>}} in 'Elixir.Genstages.RabbitMQ.Client':handle_call/3 line 26
+2018-07-25 00:27:52.435 [error] <0.348.0>@Elixir.Genstages.RabbitMQ.Client:handle_call:26 CRASH REPORT Process 'Elixir.Genstages.RabbitMQ.Client' with 0 neighbours crashed with reason: no match of right hand value {empty,#{cluster_id => <<>>}} in 'Elixir.Genstages.RabbitMQ.Client':handle_call/3 line 26
+2018-07-25 00:27:52.439 [error] <0.332.0>@Elixir.Genstages.RabbitMQ.Client:handle_call:26 Supervisor 'Elixir.Genstages.RabbitMQ.Supervisor' had child 'Elixir.Genstages.RabbitMQ.Client' started with 'Elixir.Genstages.RabbitMQ.Client':start_link() at <0.348.0> exit with reason no match of right hand value {empty,#{cluster_id => <<>>}} in 'Elixir.Genstages.RabbitMQ.Client':handle_call/3 line 26 in context child_terminated
+2018-07-25 00:27:53.010 [error] <0.353.0>@Elixir.Genstages.RabbitMQ.Client:handle_call:26 gen_server 'Elixir.Genstages.RabbitMQ.Client' terminated with reason: no match of right hand value {empty,#{cluster_id => <<>>}} in 'Elixir.Genstages.RabbitMQ.Client':handle_call/3 line 26
+2018-07-25 00:27:53.011 [error] <0.353.0>@Elixir.Genstages.RabbitMQ.Client:handle_call:26 CRASH REPORT Process 'Elixir.Genstages.RabbitMQ.Client' with 0 neighbours crashed with reason: no match of right hand value {empty,#{cluster_id => <<>>}} in 'Elixir.Genstages.RabbitMQ.Client':handle_call/3 line 26
+2018-07-25 00:27:53.012 [error] <0.332.0>@Elixir.Genstages.RabbitMQ.Client:handle_call:26 Supervisor 'Elixir.Genstages.RabbitMQ.Supervisor' had child 'Elixir.Genstages.RabbitMQ.Client' started with 'Elixir.Genstages.RabbitMQ.Client':start_link() at <0.353.0> exit with reason no match of right hand value {empty,#{cluster_id => <<>>}} in 'Elixir.Genstages.RabbitMQ.Client':handle_call/3 line 26 in context child_terminated
+2018-07-25 00:29:26.664 [error] <0.206.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':start_link({error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}) at <0.211.0> exit with reason normal in context child_terminated
+2018-07-25 00:29:26.775 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-07-25 00:29:26.782 [info] <0.33.0> Application xmerl started on node nonode@nohost
+2018-07-25 00:29:26.786 [info] <0.33.0> Application jsx started on node nonode@nohost
+2018-07-25 00:29:26.788 [info] <0.33.0> Application ranch_proxy_protocol started on node nonode@nohost
+2018-07-25 00:29:26.790 [info] <0.33.0> Application recon started on node nonode@nohost
+2018-07-25 00:29:26.790 [info] <0.33.0> Application rabbit_common started on node nonode@nohost
+2018-07-25 00:29:26.797 [info] <0.33.0> Application amqp_client started on node nonode@nohost
+2018-07-25 00:29:26.797 [info] <0.33.0> Application amqp started on node nonode@nohost
+2018-07-25 00:29:26.889 [info] <0.33.0> Application genstages started on node nonode@nohost
+2018-07-25 00:30:55.490 [error] <0.198.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':start_link({error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}) at <0.203.0> exit with reason normal in context child_terminated
+2018-07-25 00:30:55.596 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-07-25 00:30:55.600 [info] <0.33.0> Application xmerl started on node nonode@nohost
+2018-07-25 00:30:55.602 [info] <0.33.0> Application jsx started on node nonode@nohost
+2018-07-25 00:30:55.604 [info] <0.33.0> Application ranch_proxy_protocol started on node nonode@nohost
+2018-07-25 00:30:55.606 [info] <0.33.0> Application recon started on node nonode@nohost
+2018-07-25 00:30:55.606 [info] <0.33.0> Application rabbit_common started on node nonode@nohost
+2018-07-25 00:30:55.612 [info] <0.33.0> Application amqp_client started on node nonode@nohost
+2018-07-25 00:30:55.612 [info] <0.33.0> Application amqp started on node nonode@nohost
+2018-07-25 00:30:55.693 [info] <0.33.0> Application genstages started on node nonode@nohost
+2018-07-25 00:34:02.778 [error] <0.206.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':start_link({error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}) at <0.211.0> exit with reason normal in context child_terminated
+2018-07-25 00:34:02.917 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-07-25 00:34:02.928 [info] <0.33.0> Application xmerl started on node nonode@nohost
+2018-07-25 00:34:02.935 [info] <0.33.0> Application jsx started on node nonode@nohost
+2018-07-25 00:34:02.940 [info] <0.33.0> Application ranch_proxy_protocol started on node nonode@nohost
+2018-07-25 00:34:02.943 [info] <0.33.0> Application recon started on node nonode@nohost
+2018-07-25 00:34:02.943 [info] <0.33.0> Application rabbit_common started on node nonode@nohost
+2018-07-25 00:34:02.955 [info] <0.33.0> Application amqp_client started on node nonode@nohost
+2018-07-25 00:34:02.955 [info] <0.33.0> Application amqp started on node nonode@nohost
+2018-07-25 00:34:03.056 [info] <0.33.0> Application genstages started on node nonode@nohost
+2018-07-25 00:34:21.258 [error] <0.198.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':start_link({error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}) at <0.203.0> exit with reason normal in context child_terminated
+2018-07-25 00:34:21.387 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-07-25 00:34:21.391 [info] <0.33.0> Application xmerl started on node nonode@nohost
+2018-07-25 00:34:21.393 [info] <0.33.0> Application jsx started on node nonode@nohost
+2018-07-25 00:34:21.394 [info] <0.33.0> Application ranch_proxy_protocol started on node nonode@nohost
+2018-07-25 00:34:21.396 [info] <0.33.0> Application recon started on node nonode@nohost
+2018-07-25 00:34:21.396 [info] <0.33.0> Application rabbit_common started on node nonode@nohost
+2018-07-25 00:34:21.402 [info] <0.33.0> Application amqp_client started on node nonode@nohost
+2018-07-25 00:34:21.402 [info] <0.33.0> Application amqp started on node nonode@nohost
+2018-07-25 00:34:21.490 [info] <0.33.0> Application genstages started on node nonode@nohost
+2018-07-25 00:36:35.510 [error] <0.207.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':start_link({error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}) at <0.212.0> exit with reason normal in context child_terminated
+2018-07-25 00:36:35.686 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-07-25 00:36:35.693 [info] <0.33.0> Application xmerl started on node nonode@nohost
+2018-07-25 00:36:35.697 [info] <0.33.0> Application jsx started on node nonode@nohost
+2018-07-25 00:36:35.700 [info] <0.33.0> Application ranch_proxy_protocol started on node nonode@nohost
+2018-07-25 00:36:35.702 [info] <0.33.0> Application recon started on node nonode@nohost
+2018-07-25 00:36:35.702 [info] <0.33.0> Application rabbit_common started on node nonode@nohost
+2018-07-25 00:36:35.711 [info] <0.33.0> Application amqp_client started on node nonode@nohost
+2018-07-25 00:36:35.711 [info] <0.33.0> Application amqp started on node nonode@nohost
+2018-07-25 00:36:35.801 [info] <0.33.0> Application genstages started on node nonode@nohost
+2018-07-25 00:38:25.066 [error] <0.206.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':start_link({error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}) at <0.211.0> exit with reason normal in context child_terminated
+2018-07-25 00:38:25.197 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-07-25 00:38:25.201 [info] <0.33.0> Application xmerl started on node nonode@nohost
+2018-07-25 00:38:25.203 [info] <0.33.0> Application jsx started on node nonode@nohost
+2018-07-25 00:38:25.205 [info] <0.33.0> Application ranch_proxy_protocol started on node nonode@nohost
+2018-07-25 00:38:25.206 [info] <0.33.0> Application recon started on node nonode@nohost
+2018-07-25 00:38:25.206 [info] <0.33.0> Application rabbit_common started on node nonode@nohost
+2018-07-25 00:38:25.213 [info] <0.33.0> Application amqp_client started on node nonode@nohost
+2018-07-25 00:38:25.213 [info] <0.33.0> Application amqp started on node nonode@nohost
+2018-07-25 00:38:25.312 [info] <0.33.0> Application genstages started on node nonode@nohost
+2018-07-25 00:44:17.687 [error] <0.343.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':start_link({error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}) at <0.348.0> exit with reason normal in context child_terminated
+2018-07-25 00:44:17.768 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-07-25 00:44:17.773 [info] <0.33.0> Application xmerl started on node nonode@nohost
+2018-07-25 00:44:17.778 [info] <0.33.0> Application jsx started on node nonode@nohost
+2018-07-25 00:44:17.780 [info] <0.33.0> Application ranch_proxy_protocol started on node nonode@nohost
+2018-07-25 00:44:17.782 [info] <0.33.0> Application recon started on node nonode@nohost
+2018-07-25 00:44:17.782 [info] <0.33.0> Application rabbit_common started on node nonode@nohost
+2018-07-25 00:44:17.792 [info] <0.33.0> Application amqp_client started on node nonode@nohost
+2018-07-25 00:44:17.792 [info] <0.33.0> Application amqp started on node nonode@nohost
+2018-07-25 00:44:17.884 [error] <0.444.0>@gen_server:init_it:349 CRASH REPORT Process <0.444.0> with 0 neighbours exited with reason: no such process or port in call to gen_server:init_it/6 line 349
+2018-07-25 00:44:17.884 [error] <0.410.0> Supervisor 'Elixir.Genstages.Supervisor' had child 'Elixir.Genstages.Samples.ConsumerSupervisor' started with 'Elixir.Genstages.Samples.ConsumerSupervisor':start_link() at undefined exit with reason noproc in context start_error
+2018-07-25 00:44:17.884 [error] <0.408.0> CRASH REPORT Process <0.408.0> with 0 neighbours exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Genstages.Samples.ConsumerSupervisor',noproc}},{'Elixir.Genstages.Application',start,[normal,[]]}} in application_master:init/4 line 134
+2018-07-25 00:44:42.359 [error] <0.343.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':start_link({error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}) at <0.348.0> exit with reason normal in context child_terminated
+2018-07-25 00:44:42.482 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-07-25 00:44:42.489 [info] <0.33.0> Application xmerl started on node nonode@nohost
+2018-07-25 00:44:42.492 [info] <0.33.0> Application jsx started on node nonode@nohost
+2018-07-25 00:44:42.494 [info] <0.33.0> Application ranch_proxy_protocol started on node nonode@nohost
+2018-07-25 00:44:42.497 [info] <0.33.0> Application recon started on node nonode@nohost
+2018-07-25 00:44:42.497 [info] <0.33.0> Application rabbit_common started on node nonode@nohost
+2018-07-25 00:44:42.504 [info] <0.33.0> Application amqp_client started on node nonode@nohost
+2018-07-25 00:44:42.505 [info] <0.33.0> Application amqp started on node nonode@nohost
+2018-07-25 00:44:42.582 [info] <0.33.0> Application genstages started on node nonode@nohost
+2018-07-25 00:44:49.618 [error] <0.343.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':start_link({error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}) at <0.348.0> exit with reason normal in context child_terminated
+2018-07-25 00:44:49.744 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-07-25 00:44:49.756 [info] <0.33.0> Application xmerl started on node nonode@nohost
+2018-07-25 00:44:49.761 [info] <0.33.0> Application jsx started on node nonode@nohost
+2018-07-25 00:44:49.765 [info] <0.33.0> Application ranch_proxy_protocol started on node nonode@nohost
+2018-07-25 00:44:49.767 [info] <0.33.0> Application recon started on node nonode@nohost
+2018-07-25 00:44:49.767 [info] <0.33.0> Application rabbit_common started on node nonode@nohost
+2018-07-25 00:44:49.778 [info] <0.33.0> Application amqp_client started on node nonode@nohost
+2018-07-25 00:44:49.778 [info] <0.33.0> Application amqp started on node nonode@nohost
+2018-07-25 00:44:49.863 [error] <0.444.0>@gen_server:init_it:349 CRASH REPORT Process <0.444.0> with 0 neighbours exited with reason: no such process or port in call to gen_server:init_it/6 line 349
+2018-07-25 00:44:49.863 [error] <0.410.0> Supervisor 'Elixir.Genstages.Supervisor' had child 'Elixir.Genstages.Samples.ConsumerSupervisor' started with 'Elixir.Genstages.Samples.ConsumerSupervisor':start_link() at undefined exit with reason noproc in context start_error
+2018-07-25 00:44:49.863 [error] <0.408.0> CRASH REPORT Process <0.408.0> with 0 neighbours exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Genstages.Samples.ConsumerSupervisor',noproc}},{'Elixir.Genstages.Application',start,[normal,[]]}} in application_master:init/4 line 134
+2018-07-25 00:45:45.497 [error] <0.206.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':start_link({error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}) at <0.211.0> exit with reason normal in context child_terminated
+2018-07-25 00:45:45.607 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-07-25 00:45:45.610 [info] <0.33.0> Application xmerl started on node nonode@nohost
+2018-07-25 00:45:45.612 [info] <0.33.0> Application jsx started on node nonode@nohost
+2018-07-25 00:45:45.614 [info] <0.33.0> Application ranch_proxy_protocol started on node nonode@nohost
+2018-07-25 00:45:45.615 [info] <0.33.0> Application recon started on node nonode@nohost
+2018-07-25 00:45:45.615 [info] <0.33.0> Application rabbit_common started on node nonode@nohost
+2018-07-25 00:45:45.622 [info] <0.33.0> Application amqp_client started on node nonode@nohost
+2018-07-25 00:45:45.622 [info] <0.33.0> Application amqp started on node nonode@nohost
+2018-07-25 00:45:45.728 [error] <0.307.0>@gen_server:init_it:349 CRASH REPORT Process <0.307.0> with 0 neighbours exited with reason: no such process or port in call to gen_server:init_it/6 line 349
+2018-07-25 00:45:45.728 [error] <0.273.0> Supervisor 'Elixir.Genstages.Supervisor' had child 'Elixir.Genstages.Samples.ConsumerSupervisor' started with 'Elixir.Genstages.Samples.ConsumerSupervisor':start_link() at undefined exit with reason noproc in context start_error
+2018-07-25 00:45:45.728 [error] <0.271.0> CRASH REPORT Process <0.271.0> with 0 neighbours exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Genstages.Samples.ConsumerSupervisor',noproc}},{'Elixir.Genstages.Application',start,[normal,[]]}} in application_master:init/4 line 134
+2018-07-25 00:47:15.073 [error] <0.206.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':start_link({error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}) at <0.211.0> exit with reason normal in context child_terminated
+2018-07-25 00:47:15.157 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-07-25 00:47:15.160 [info] <0.33.0> Application xmerl started on node nonode@nohost
+2018-07-25 00:47:15.163 [info] <0.33.0> Application jsx started on node nonode@nohost
+2018-07-25 00:47:15.164 [info] <0.33.0> Application ranch_proxy_protocol started on node nonode@nohost
+2018-07-25 00:47:15.166 [info] <0.33.0> Application recon started on node nonode@nohost
+2018-07-25 00:47:15.166 [info] <0.33.0> Application rabbit_common started on node nonode@nohost
+2018-07-25 00:47:15.173 [info] <0.33.0> Application amqp_client started on node nonode@nohost
+2018-07-25 00:47:15.174 [info] <0.33.0> Application amqp started on node nonode@nohost
+2018-07-25 00:47:15.256 [error] <0.307.0>@gen_server:init_it:349 CRASH REPORT Process <0.307.0> with 0 neighbours exited with reason: no such process or port in call to gen_server:init_it/6 line 349
+2018-07-25 00:47:15.256 [error] <0.273.0> Supervisor 'Elixir.Genstages.Supervisor' had child 'Elixir.Genstages.Samples.ConsumerSupervisor' started with 'Elixir.Genstages.Samples.ConsumerSupervisor':start_link() at undefined exit with reason noproc in context start_error
+2018-07-25 00:47:15.257 [error] <0.271.0> CRASH REPORT Process <0.271.0> with 0 neighbours exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Genstages.Samples.ConsumerSupervisor',noproc}},{'Elixir.Genstages.Application',start,[normal,[]]}} in application_master:init/4 line 134
+2018-07-25 00:47:31.908 [error] <0.206.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':start_link({error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}) at <0.211.0> exit with reason normal in context child_terminated
+2018-07-25 00:47:32.006 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-07-25 00:47:32.010 [info] <0.33.0> Application xmerl started on node nonode@nohost
+2018-07-25 00:47:32.013 [info] <0.33.0> Application jsx started on node nonode@nohost
+2018-07-25 00:47:32.014 [info] <0.33.0> Application ranch_proxy_protocol started on node nonode@nohost
+2018-07-25 00:47:32.016 [info] <0.33.0> Application recon started on node nonode@nohost
+2018-07-25 00:47:32.016 [info] <0.33.0> Application rabbit_common started on node nonode@nohost
+2018-07-25 00:47:32.024 [info] <0.33.0> Application amqp_client started on node nonode@nohost
+2018-07-25 00:47:32.025 [info] <0.33.0> Application amqp started on node nonode@nohost
+2018-07-25 00:47:32.109 [info] <0.33.0> Application genstages started on node nonode@nohost
+2018-07-25 00:49:45.508 [error] <0.343.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':start_link({error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}) at <0.348.0> exit with reason normal in context child_terminated
+2018-07-25 00:49:45.628 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-07-25 00:49:45.639 [info] <0.33.0> Application xmerl started on node nonode@nohost
+2018-07-25 00:49:45.647 [info] <0.33.0> Application jsx started on node nonode@nohost
+2018-07-25 00:49:45.652 [info] <0.33.0> Application ranch_proxy_protocol started on node nonode@nohost
+2018-07-25 00:49:45.657 [info] <0.33.0> Application recon started on node nonode@nohost
+2018-07-25 00:49:45.657 [info] <0.33.0> Application rabbit_common started on node nonode@nohost
+2018-07-25 00:49:45.671 [info] <0.33.0> Application amqp_client started on node nonode@nohost
+2018-07-25 00:49:45.671 [info] <0.33.0> Application amqp started on node nonode@nohost
+2018-07-25 00:49:45.753 [info] <0.33.0> Application genstages started on node nonode@nohost
+2018-07-25 00:50:19.181 [error] <0.343.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':start_link({error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}) at <0.348.0> exit with reason normal in context child_terminated
+2018-07-25 00:50:19.299 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-07-25 00:50:19.313 [info] <0.33.0> Application xmerl started on node nonode@nohost
+2018-07-25 00:50:19.321 [info] <0.33.0> Application jsx started on node nonode@nohost
+2018-07-25 00:50:19.324 [info] <0.33.0> Application ranch_proxy_protocol started on node nonode@nohost
+2018-07-25 00:50:19.328 [info] <0.33.0> Application recon started on node nonode@nohost
+2018-07-25 00:50:19.328 [info] <0.33.0> Application rabbit_common started on node nonode@nohost
+2018-07-25 00:50:19.339 [info] <0.33.0> Application amqp_client started on node nonode@nohost
+2018-07-25 00:50:19.339 [info] <0.33.0> Application amqp started on node nonode@nohost
+2018-07-25 00:50:19.428 [info] <0.33.0> Application genstages started on node nonode@nohost
+2018-07-25 00:50:50.485 [error] <0.206.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':start_link({error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}) at <0.211.0> exit with reason normal in context child_terminated
+2018-07-25 00:50:50.555 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-07-25 00:50:50.560 [info] <0.33.0> Application xmerl started on node nonode@nohost
+2018-07-25 00:50:50.562 [info] <0.33.0> Application jsx started on node nonode@nohost
+2018-07-25 00:50:50.563 [info] <0.33.0> Application ranch_proxy_protocol started on node nonode@nohost
+2018-07-25 00:50:50.565 [info] <0.33.0> Application recon started on node nonode@nohost
+2018-07-25 00:50:50.565 [info] <0.33.0> Application rabbit_common started on node nonode@nohost
+2018-07-25 00:50:50.571 [info] <0.33.0> Application amqp_client started on node nonode@nohost
+2018-07-25 00:50:50.571 [info] <0.33.0> Application amqp started on node nonode@nohost
+2018-07-25 00:50:50.651 [info] <0.33.0> Application genstages started on node nonode@nohost
+2018-07-25 00:50:58.065 [error] <0.343.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':start_link({error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}) at <0.348.0> exit with reason normal in context child_terminated
+2018-07-25 00:50:58.186 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-07-25 00:50:58.198 [info] <0.33.0> Application xmerl started on node nonode@nohost
+2018-07-25 00:50:58.208 [info] <0.33.0> Application jsx started on node nonode@nohost
+2018-07-25 00:50:58.215 [info] <0.33.0> Application ranch_proxy_protocol started on node nonode@nohost
+2018-07-25 00:50:58.220 [info] <0.33.0> Application recon started on node nonode@nohost
+2018-07-25 00:50:58.221 [info] <0.33.0> Application rabbit_common started on node nonode@nohost
+2018-07-25 00:50:58.243 [info] <0.33.0> Application amqp_client started on node nonode@nohost
+2018-07-25 00:50:58.243 [info] <0.33.0> Application amqp started on node nonode@nohost
+2018-07-25 00:50:58.346 [error] <0.444.0>@gen_server:init_it:349 CRASH REPORT Process <0.444.0> with 0 neighbours exited with reason: no such process or port in call to gen_server:init_it/6 line 349
+2018-07-25 00:50:58.346 [error] <0.410.0> Supervisor 'Elixir.Genstages.Supervisor' had child 'Elixir.Genstages.Samples.ConsumerSupervisor' started with 'Elixir.Genstages.Samples.ConsumerSupervisor':start_link() at undefined exit with reason noproc in context start_error
+2018-07-25 00:50:58.347 [error] <0.408.0> CRASH REPORT Process <0.408.0> with 0 neighbours exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Genstages.Samples.ConsumerSupervisor',noproc}},{'Elixir.Genstages.Application',start,[normal,[]]}} in application_master:init/4 line 134
+2018-07-25 00:52:47.907 [error] <0.206.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':start_link({error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}) at <0.211.0> exit with reason normal in context child_terminated
+2018-07-25 00:52:47.998 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-07-25 00:52:48.002 [info] <0.33.0> Application xmerl started on node nonode@nohost
+2018-07-25 00:52:48.005 [info] <0.33.0> Application jsx started on node nonode@nohost
+2018-07-25 00:52:48.006 [info] <0.33.0> Application ranch_proxy_protocol started on node nonode@nohost
+2018-07-25 00:52:48.008 [info] <0.33.0> Application recon started on node nonode@nohost
+2018-07-25 00:52:48.008 [info] <0.33.0> Application rabbit_common started on node nonode@nohost
+2018-07-25 00:52:48.014 [info] <0.33.0> Application amqp_client started on node nonode@nohost
+2018-07-25 00:52:48.014 [info] <0.33.0> Application amqp started on node nonode@nohost
+2018-07-25 00:52:48.094 [error] <0.307.0>@gen_server:init_it:349 CRASH REPORT Process <0.307.0> with 0 neighbours exited with reason: no such process or port in call to gen_server:init_it/6 line 349
+2018-07-25 00:52:48.094 [error] <0.273.0> Supervisor 'Elixir.Genstages.Supervisor' had child 'Elixir.Genstages.Samples.ConsumerSupervisor' started with 'Elixir.Genstages.Samples.ConsumerSupervisor':start_link() at undefined exit with reason noproc in context start_error
+2018-07-25 00:52:48.095 [error] <0.271.0> CRASH REPORT Process <0.271.0> with 0 neighbours exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Genstages.Samples.ConsumerSupervisor',noproc}},{'Elixir.Genstages.Application',start,[normal,[]]}} in application_master:init/4 line 134
+2018-07-25 00:53:41.756 [error] <0.206.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':start_link({error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}) at <0.211.0> exit with reason normal in context child_terminated
+2018-07-25 00:53:41.845 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-07-25 00:53:41.850 [info] <0.33.0> Application xmerl started on node nonode@nohost
+2018-07-25 00:53:41.853 [info] <0.33.0> Application jsx started on node nonode@nohost
+2018-07-25 00:53:41.855 [info] <0.33.0> Application ranch_proxy_protocol started on node nonode@nohost
+2018-07-25 00:53:41.856 [info] <0.33.0> Application recon started on node nonode@nohost
+2018-07-25 00:53:41.856 [info] <0.33.0> Application rabbit_common started on node nonode@nohost
+2018-07-25 00:53:41.863 [info] <0.33.0> Application amqp_client started on node nonode@nohost
+2018-07-25 00:53:41.863 [info] <0.33.0> Application amqp started on node nonode@nohost
+2018-07-25 00:53:41.977 [info] <0.33.0> Application genstages started on node nonode@nohost
+2018-07-25 00:55:10.036 [error] <0.206.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':start_link({error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}) at <0.211.0> exit with reason normal in context child_terminated
+2018-07-25 00:55:10.145 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-07-25 00:55:10.152 [info] <0.33.0> Application xmerl started on node nonode@nohost
+2018-07-25 00:55:10.155 [info] <0.33.0> Application jsx started on node nonode@nohost
+2018-07-25 00:55:10.158 [info] <0.33.0> Application ranch_proxy_protocol started on node nonode@nohost
+2018-07-25 00:55:10.160 [info] <0.33.0> Application recon started on node nonode@nohost
+2018-07-25 00:55:10.160 [info] <0.33.0> Application rabbit_common started on node nonode@nohost
+2018-07-25 00:55:10.168 [info] <0.33.0> Application amqp_client started on node nonode@nohost
+2018-07-25 00:55:10.168 [info] <0.33.0> Application amqp started on node nonode@nohost
+2018-07-25 00:55:10.249 [info] <0.33.0> Application genstages started on node nonode@nohost
+2018-07-25 00:55:26.860 [error] <0.198.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':start_link({error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}) at <0.203.0> exit with reason normal in context child_terminated
+2018-07-25 00:55:26.960 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-07-25 00:55:26.965 [info] <0.33.0> Application xmerl started on node nonode@nohost
+2018-07-25 00:55:26.967 [info] <0.33.0> Application jsx started on node nonode@nohost
+2018-07-25 00:55:26.968 [info] <0.33.0> Application ranch_proxy_protocol started on node nonode@nohost
+2018-07-25 00:55:26.970 [info] <0.33.0> Application recon started on node nonode@nohost
+2018-07-25 00:55:26.970 [info] <0.33.0> Application rabbit_common started on node nonode@nohost
+2018-07-25 00:55:26.976 [info] <0.33.0> Application amqp_client started on node nonode@nohost
+2018-07-25 00:55:26.976 [info] <0.33.0> Application amqp started on node nonode@nohost
+2018-07-25 00:55:27.127 [info] <0.33.0> Application genstages started on node nonode@nohost
+2018-07-25 00:56:42.130 [error] <0.302.0>@gen_server:init_it:349 CRASH REPORT Process <0.302.0> with 1 neighbours exited with reason: bad return value: {ok,[{'Elixir.Genstages.Samples.Consumer',{'Elixir.Genstages.Samples.Consumer',start_link,[]},temporary,5000,worker,['Elixir.Genstages.Samples.Consumer']}],[{strategy,one_for_one},{subscribe_to,[{'Elixir.Genstages.Samples.Producer',[{min_demand,1},{max_demand,10}]}]}]} in gen_server:init_it/6 line 349
+2018-07-25 00:56:48.993 [error] <0.305.0>@gen_server:init_it:349 CRASH REPORT Process <0.305.0> with 1 neighbours exited with reason: bad return value: {ok,[{'Elixir.Genstages.Samples.Consumer',{'Elixir.Genstages.Samples.Consumer',start_link,[]},temporary,5000,worker,['Elixir.Genstages.Samples.Consumer']}],[{strategy,one_for_one},{subscribe_to,[{'Elixir.Genstages.Samples.Producer',[{min_demand,1},{max_demand,10}]}]}]} in gen_server:init_it/6 line 349
+2018-07-25 00:56:53.461 [error] <0.308.0>@gen_server:init_it:349 CRASH REPORT Process <0.308.0> with 1 neighbours exited with reason: bad return value: {ok,[{'Elixir.Genstages.Samples.Consumer',{'Elixir.Genstages.Samples.Consumer',start_link,[]},temporary,5000,worker,['Elixir.Genstages.Samples.Consumer']}],[{strategy,one_for_one},{subscribe_to,[{'Elixir.Genstages.Samples.Producer',[{min_demand,1},{max_demand,10}]}]}]} in gen_server:init_it/6 line 349
+2018-07-25 00:56:57.029 [error] <0.311.0>@gen_server:init_it:349 CRASH REPORT Process <0.311.0> with 1 neighbours exited with reason: bad return value: {ok,[{'Elixir.Genstages.Samples.Consumer',{'Elixir.Genstages.Samples.Consumer',start_link,[]},temporary,5000,worker,['Elixir.Genstages.Samples.Consumer']}],[{strategy,one_for_one},{subscribe_to,[{'Elixir.Genstages.Samples.Producer',[{min_demand,1},{max_demand,10}]}]}]} in gen_server:init_it/6 line 349
+2018-07-25 00:58:12.330 [error] <0.315.0>@gen_server:init_it:349 CRASH REPORT Process <0.315.0> with 1 neighbours exited with reason: bad return value: {ok,[{'Elixir.Genstages.Samples.Consumer',{'Elixir.Genstages.Samples.Consumer',start_link,[]},temporary,5000,worker,['Elixir.Genstages.Samples.Consumer']}],[{strategy,one_for_one},{subscribe_to,[{'Elixir.Genstages.Samples.Producer',[{min_demand,1},{max_demand,10}]}]}]} in gen_server:init_it/6 line 349
+2018-07-25 00:58:14.047 [error] <0.318.0>@gen_server:init_it:349 CRASH REPORT Process <0.318.0> with 1 neighbours exited with reason: bad return value: {ok,[{'Elixir.Genstages.Samples.Consumer',{'Elixir.Genstages.Samples.Consumer',start_link,[]},temporary,5000,worker,['Elixir.Genstages.Samples.Consumer']}],[{strategy,one_for_one},{subscribe_to,[{'Elixir.Genstages.Samples.Producer',[{min_demand,1},{max_demand,10}]}]}]} in gen_server:init_it/6 line 349
+2018-07-25 00:58:37.802 [error] <0.206.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':start_link({error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}) at <0.211.0> exit with reason normal in context child_terminated
+2018-07-25 00:58:37.896 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-07-25 00:58:37.905 [info] <0.33.0> Application xmerl started on node nonode@nohost
+2018-07-25 00:58:37.909 [info] <0.33.0> Application jsx started on node nonode@nohost
+2018-07-25 00:58:37.911 [info] <0.33.0> Application ranch_proxy_protocol started on node nonode@nohost
+2018-07-25 00:58:37.913 [info] <0.33.0> Application recon started on node nonode@nohost
+2018-07-25 00:58:37.913 [info] <0.33.0> Application rabbit_common started on node nonode@nohost
+2018-07-25 00:58:37.923 [info] <0.33.0> Application amqp_client started on node nonode@nohost
+2018-07-25 00:58:37.923 [info] <0.33.0> Application amqp started on node nonode@nohost
+2018-07-25 00:58:38.008 [info] <0.33.0> Application genstages started on node nonode@nohost
+2018-07-25 00:58:53.697 [error] <0.206.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':start_link({error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}) at <0.211.0> exit with reason normal in context child_terminated
+2018-07-25 00:58:53.776 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-07-25 00:58:53.780 [info] <0.33.0> Application xmerl started on node nonode@nohost
+2018-07-25 00:58:53.782 [info] <0.33.0> Application jsx started on node nonode@nohost
+2018-07-25 00:58:53.783 [info] <0.33.0> Application ranch_proxy_protocol started on node nonode@nohost
+2018-07-25 00:58:53.785 [info] <0.33.0> Application recon started on node nonode@nohost
+2018-07-25 00:58:53.785 [info] <0.33.0> Application rabbit_common started on node nonode@nohost
+2018-07-25 00:58:53.791 [info] <0.33.0> Application amqp_client started on node nonode@nohost
+2018-07-25 00:58:53.791 [info] <0.33.0> Application amqp started on node nonode@nohost
+2018-07-25 00:58:53.913 [info] <0.33.0> Application genstages started on node nonode@nohost
+2018-07-25 00:58:55.393 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:55.393 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:55.393 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:55.393 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:55.393 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:55.393 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:55.393 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:55.393 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:55.393 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:55.393 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:55.393 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:55.393 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:55.393 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:55.393 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:55.394 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:55.394 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:55.394 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:55.394 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:55.394 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:55.394 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:55.394 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:55.394 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:55.394 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:55.394 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:55.394 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:55.394 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:55.394 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:55.395 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:55.396 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:55.396 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:55.396 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:55.396 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:55.397 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:55.397 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:55.397 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:55.397 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:55.398 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:55.398 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:55.398 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:55.398 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:55.398 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:55.399 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:55.399 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:55.399 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:55.399 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:55.400 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:55.400 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:55.400 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:55.403 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:55.404 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:55.404 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:55.404 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:55.405 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:55.405 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:55.405 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:56.000 [warning] <0.32.0> lager_error_logger_h dropped 3 messages in the last second that exceeded the limit of 50 messages/sec
+2018-07-25 00:58:56.000 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:56.000 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:56.000 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:56.001 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:56.001 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:56.001 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:56.001 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:56.002 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:56.002 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:56.002 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:56.003 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:56.003 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:56.003 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:56.003 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:56.004 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:56.004 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:56.004 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:56.005 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:56.005 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:56.005 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:56.006 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:56.006 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:56.006 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:56.006 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:56.007 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:56.007 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:56.007 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:56.007 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:56.008 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:56.008 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:56.008 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:56.008 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:56.009 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:56.009 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:56.009 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:56.009 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:56.010 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:56.010 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:56.010 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:56.010 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:56.011 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:56.011 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:56.011 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:56.011 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:56.012 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:56.012 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:56.012 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:56.012 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:56.013 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:56.013 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:57.000 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:57.000 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:57.001 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:57.001 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:57.002 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:57.002 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:57.002 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:57.003 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:57.003 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:57.003 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:57.003 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:57.004 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:57.004 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:57.004 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:57.005 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:57.005 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:57.005 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:57.005 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:57.005 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:57.006 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:57.006 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:57.006 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:57.006 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:57.007 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:57.007 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:57.007 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:57.008 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:57.008 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:57.008 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:57.008 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:57.009 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:57.009 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:57.009 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:57.010 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:57.010 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:57.010 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:57.010 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:57.011 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:57.011 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:57.011 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:57.012 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:57.012 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:57.012 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:57.013 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:57.013 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:57.013 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:57.014 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:57.014 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:57.014 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:57.014 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:58.000 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:58.000 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:58.000 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:58.001 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:58.001 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:58.001 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:58.002 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:58.002 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:58.002 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:58.003 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:58.003 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:58.003 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:58.003 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:58.004 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:58.004 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:58.004 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:58.005 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:58.005 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:58.005 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:58.005 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:58.006 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:58.006 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:58.007 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:58.007 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:58.007 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:58.008 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:58.008 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:58.008 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:58.009 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:58.009 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:58.009 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:58.009 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:58.010 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:58.010 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:58.010 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:58.011 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:58.011 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:58.011 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:58.012 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:58.012 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:58.012 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:58.013 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:58.013 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:58.013 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:58.013 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:58.014 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:58.014 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:58.014 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:58.014 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:58.015 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:59.000 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:59.000 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:59.001 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:59.001 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:59.001 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:59.002 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:59.002 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:59.003 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:59.003 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:59.003 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:59.004 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:59.005 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:59.005 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:59.005 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:59.006 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:59.007 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:59.008 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:59.011 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:59.012 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:59.016 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:59.016 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:59.017 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:59.017 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:59.018 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:59.018 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:59.019 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:59.019 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:59.020 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:59.020 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:59.021 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:59.023 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:59.023 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:59.024 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:59.024 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:59.025 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:59.026 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:59.027 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:59.027 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:59.028 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:59.029 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:59.029 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:59.030 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:59.030 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:59.031 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:59.031 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:59.032 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:59.033 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:59.033 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:59.034 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:58:59.034 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:00.003 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:00.004 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:00.005 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:00.005 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:00.006 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:00.006 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:00.007 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:00.008 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:00.008 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:00.009 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:00.009 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:00.010 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:00.010 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:00.010 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:00.011 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:00.011 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:00.012 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:00.012 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:00.013 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:00.013 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:00.014 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:00.014 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:00.015 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:00.019 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:00.019 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:00.019 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:00.019 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:00.019 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:00.020 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:00.020 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:00.020 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:00.020 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:00.020 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:00.020 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:00.020 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:00.020 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:00.020 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:00.020 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:00.020 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:00.020 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:00.020 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:00.020 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:00.020 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:00.021 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:00.021 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:00.021 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:00.021 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:00.022 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:00.022 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:00.022 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:01.000 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:01.000 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:01.001 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:01.001 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:01.001 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:01.001 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:01.002 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:01.002 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:01.002 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:01.003 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:01.003 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:01.003 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:01.003 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:01.004 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:01.004 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:01.004 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:01.005 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:01.005 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:01.008 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:01.008 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:01.008 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:01.008 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:01.009 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:01.009 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:01.010 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:01.010 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:01.010 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:01.010 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:01.011 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:01.011 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:01.011 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:01.012 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:01.012 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:01.012 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:01.012 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:01.013 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:01.013 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:01.013 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:01.014 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:01.014 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:01.014 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:01.015 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:01.015 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:01.015 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:01.016 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:01.016 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:01.016 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:01.016 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:01.017 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:01.017 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:02.000 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:02.002 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:02.002 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:02.002 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:02.003 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:02.003 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:02.003 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:02.004 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:02.004 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:02.004 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:02.005 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:02.005 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:02.005 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:02.006 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:02.006 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:02.006 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:02.006 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:02.007 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:02.007 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:02.007 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:02.008 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:02.008 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:02.008 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:02.008 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:02.009 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:02.009 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:02.009 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:02.010 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:02.010 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:02.010 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:02.010 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:02.011 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:02.011 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:02.011 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:02.011 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:02.012 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:02.012 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:02.012 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:02.013 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:02.013 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:02.013 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:02.013 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:02.014 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:02.014 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:02.014 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:02.015 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:02.015 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:02.015 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:02.016 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:02.016 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:03.000 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:03.001 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:03.001 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:03.001 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:03.002 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:03.002 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:03.002 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:03.003 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:03.003 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:03.003 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:03.004 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:03.004 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:03.004 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:03.005 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:03.005 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:03.005 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:03.006 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:03.006 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:03.006 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:03.006 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:03.007 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:03.007 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:03.007 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:03.008 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:03.008 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:03.008 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:03.008 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:03.009 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:03.009 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:03.009 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:03.009 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:03.011 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:03.012 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:03.012 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:03.013 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:03.013 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:03.013 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:03.013 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:03.014 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:03.014 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:03.014 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:03.015 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:03.015 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:03.015 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:03.016 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:03.016 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:03.016 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:03.016 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:03.017 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:03.017 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:04.001 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:04.001 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:04.001 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:04.002 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:04.002 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:04.002 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:04.003 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:04.003 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:04.003 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:04.004 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:04.004 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:04.004 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:04.005 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:04.005 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:04.005 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:04.006 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:04.006 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:04.006 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:04.007 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:04.007 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:04.007 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:04.007 [warning] <0.306.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 00:59:28.725 [error] <0.343.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':start_link({error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}) at <0.348.0> exit with reason normal in context child_terminated
+2018-07-25 00:59:28.827 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-07-25 00:59:28.836 [info] <0.33.0> Application xmerl started on node nonode@nohost
+2018-07-25 00:59:28.842 [info] <0.33.0> Application jsx started on node nonode@nohost
+2018-07-25 00:59:28.846 [info] <0.33.0> Application ranch_proxy_protocol started on node nonode@nohost
+2018-07-25 00:59:28.852 [info] <0.33.0> Application recon started on node nonode@nohost
+2018-07-25 00:59:28.853 [info] <0.33.0> Application rabbit_common started on node nonode@nohost
+2018-07-25 00:59:28.869 [info] <0.33.0> Application amqp_client started on node nonode@nohost
+2018-07-25 00:59:28.870 [info] <0.33.0> Application amqp started on node nonode@nohost
+2018-07-25 00:59:28.979 [info] <0.33.0> Application genstages started on node nonode@nohost
+2018-07-25 01:00:30.249 [error] <0.343.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':start_link({error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}) at <0.348.0> exit with reason normal in context child_terminated
+2018-07-25 01:00:30.372 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-07-25 01:00:30.380 [info] <0.33.0> Application xmerl started on node nonode@nohost
+2018-07-25 01:00:30.383 [info] <0.33.0> Application jsx started on node nonode@nohost
+2018-07-25 01:00:30.392 [info] <0.33.0> Application ranch_proxy_protocol started on node nonode@nohost
+2018-07-25 01:00:30.394 [info] <0.33.0> Application recon started on node nonode@nohost
+2018-07-25 01:00:30.394 [info] <0.33.0> Application rabbit_common started on node nonode@nohost
+2018-07-25 01:00:30.402 [info] <0.33.0> Application amqp_client started on node nonode@nohost
+2018-07-25 01:00:30.402 [info] <0.33.0> Application amqp started on node nonode@nohost
+2018-07-25 01:00:30.491 [info] <0.33.0> Application genstages started on node nonode@nohost
+2018-07-25 01:01:21.958 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:21.958 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:21.958 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:21.958 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:21.959 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:21.959 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:21.959 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:21.959 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:21.959 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:21.960 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:21.967 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:21.967 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:21.967 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:21.968 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:21.968 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:21.968 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:21.969 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:21.971 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:21.971 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:21.972 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:21.972 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:21.972 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:21.973 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:21.973 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:21.974 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:21.974 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:21.974 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:21.974 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:21.975 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:21.975 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:21.975 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:21.975 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:21.976 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:21.976 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:21.976 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:21.977 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:21.977 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:21.977 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:21.978 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:21.978 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:21.978 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:21.979 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:21.979 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:21.979 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:21.980 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:21.980 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:21.980 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:21.981 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:21.981 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:21.981 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:21.982 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:21.982 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:21.983 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:21.983 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:21.983 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:22.000 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:22.001 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:22.001 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:22.001 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:22.001 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:22.002 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:22.002 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:22.002 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:22.003 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:22.003 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:22.003 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:22.004 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:22.004 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:22.004 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:22.004 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:22.005 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:22.005 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:22.005 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:22.006 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:22.006 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:22.006 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:22.007 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:22.007 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:22.007 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:22.008 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:22.008 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:22.008 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:22.008 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:22.009 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:22.009 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:22.009 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:22.010 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:22.010 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:22.010 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:22.010 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:22.011 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:22.011 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:22.011 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:22.012 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:22.012 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:22.012 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:22.012 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:22.013 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:22.013 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:22.013 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:22.014 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:22.014 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:22.014 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:22.014 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer
+2018-07-25 01:01:22.015 [warning] <0.443.0> GenStage producer 'Elixir.Genstages.Samples.RabbitMQProducer' has discarded 1 events from buffer

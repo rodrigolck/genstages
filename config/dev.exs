@@ -35,6 +35,3 @@ config :logger, :console, format: "[$level] $message\n"
 # Set a higher stacktrace during development. Avoid configuring such
 # in production as building large stacktraces may be expensive.
 config :phoenix, :stacktrace_depth, 20
-
-# Possible scenarios: ["P-C", "P-PC-C", "P-CS", "B-C"]
-config :genstages, :scenario, "P-C"

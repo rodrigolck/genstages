@@ -1,0 +1,1057 @@
+2018-07-25 00:05:52 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    child_terminated
+     Reason:     normal
+     Offender:   [{pid,<0.212.0>},{id,'Elixir.Logger.ErrorHandler'},{mfargs,{'Elixir.Logger.Watcher',start_link,[{error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-07-25 00:05:53 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Genstages.RabbitMQ.Supervisor'}
+     Context:    start_error
+     Reason:     {'EXIT',{undef,[{'Elixir.Genstages.RabbitMQ.Publisher',start_link,[],[]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}
+     Offender:   [{pid,undefined},{id,'Elixir.Genstages.RabbitMQ.Publisher'},{mfargs,{'Elixir.Genstages.RabbitMQ.Publisher',start_link,[]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-07-25 00:05:53 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Genstages.Supervisor'}
+     Context:    start_error
+     Reason:     {shutdown,{failed_to_start_child,'Elixir.Genstages.RabbitMQ.Publisher',{'EXIT',{undef,[{'Elixir.Genstages.RabbitMQ.Publisher',start_link,[],[]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}}}
+     Offender:   [{pid,undefined},{id,'Elixir.Genstages.RabbitMQ.Supervisor'},{mfargs,{'Elixir.Genstages.RabbitMQ.Supervisor',start_link,[]}},{restart_type,permanent},{shutdown,infinity},{child_type,supervisor}]
+
+2018-07-25 00:05:53 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.272.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,'Elixir.Genstages.RabbitMQ.Supervisor',{shutdown,{failed_to_start_child,'Elixir.Genstages.RabbitMQ.Publisher',{'EXIT',{undef,[{'Elixir.Genstages.RabbitMQ.Publisher',start_link,[],[]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}}}}},{'Elixir.Genstages.Application',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,134}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.271.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.273.0>,normal}]
+    links: [<0.271.0>,<0.33.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 205
+  neighbours:
+2018-07-25 00:06:23 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    child_terminated
+     Reason:     normal
+     Offender:   [{pid,<0.203.0>},{id,'Elixir.Logger.ErrorHandler'},{mfargs,{'Elixir.Logger.Watcher',start_link,[{error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-07-25 00:06:23 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Genstages.RabbitMQ.Supervisor'}
+     Context:    start_error
+     Reason:     {'EXIT',{undef,[{'Elixir.Genstages.RabbitMQ.Publisher',start_link,[],[]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}
+     Offender:   [{pid,undefined},{id,'Elixir.Genstages.RabbitMQ.Publisher'},{mfargs,{'Elixir.Genstages.RabbitMQ.Publisher',start_link,[]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-07-25 00:06:23 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Genstages.Supervisor'}
+     Context:    start_error
+     Reason:     {shutdown,{failed_to_start_child,'Elixir.Genstages.RabbitMQ.Publisher',{'EXIT',{undef,[{'Elixir.Genstages.RabbitMQ.Publisher',start_link,[],[]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}}}
+     Offender:   [{pid,undefined},{id,'Elixir.Genstages.RabbitMQ.Supervisor'},{mfargs,{'Elixir.Genstages.RabbitMQ.Supervisor',start_link,[]}},{restart_type,permanent},{shutdown,infinity},{child_type,supervisor}]
+
+2018-07-25 00:06:23 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.263.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,'Elixir.Genstages.RabbitMQ.Supervisor',{shutdown,{failed_to_start_child,'Elixir.Genstages.RabbitMQ.Publisher',{'EXIT',{undef,[{'Elixir.Genstages.RabbitMQ.Publisher',start_link,[],[]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}}}}},{'Elixir.Genstages.Application',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,134}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.262.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.264.0>,normal}]
+    links: [<0.262.0>,<0.33.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 205
+  neighbours:
+2018-07-25 00:06:42 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    child_terminated
+     Reason:     normal
+     Offender:   [{pid,<0.211.0>},{id,'Elixir.Logger.ErrorHandler'},{mfargs,{'Elixir.Logger.Watcher',start_link,[{error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-07-25 00:07:32 =ERROR REPORT====
+** Generic server 'Elixir.Genstages.RabbitMQ.Client' terminating 
+** Last message in was {'$gen_cast',{get,<<"genstages">>}}
+** When Server state == #{'__struct__' => 'Elixir.AMQP.Channel',conn => #{'__struct__' => 'Elixir.AMQP.Connection',pid => <0.288.0>},pid => <0.300.0>}
+** Reason for termination == 
+** {{noproc,{gen_server,call,[<0.300.0>,{call,{'basic.get',0,<<"genstages">>,false},none,<0.297.0>},60000]}},[{gen_server,call,3,[{file,"gen_server.erl"},{line,214}]},{'Elixir.AMQP.Basic',get,3,[{file,"lib/amqp/basic.ex"},{line,161}]},{'Elixir.Genstages.RabbitMQ.Client',handle_cast,2,[{file,"lib/genstages/rabbitmq/client.ex"},{line,26}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,616}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,686}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+2018-07-25 00:07:32 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Genstages.RabbitMQ.Client:init/1
+    pid: <0.297.0>
+    registered_name: 'Elixir.Genstages.RabbitMQ.Client'
+    exception exit: {{noproc,{gen_server,call,[<0.300.0>,{call,{'basic.get',0,<<"genstages">>,false},none,<0.297.0>},60000]}},[{gen_server,call,3,[{file,"gen_server.erl"},{line,214}]},{'Elixir.AMQP.Basic',get,3,[{file,"lib/amqp/basic.ex"},{line,161}]},{'Elixir.Genstages.RabbitMQ.Client',handle_cast,2,[{file,"lib/genstages/rabbitmq/client.ex"},{line,26}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,616}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,686}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['Elixir.Genstages.RabbitMQ.Supervisor','Elixir.Genstages.Supervisor',<0.272.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.284.0>]
+    dictionary: [{gen_server_call_timeout,60000}]
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 472
+  neighbours:
+2018-07-25 00:07:32 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Genstages.RabbitMQ.Supervisor'}
+     Context:    child_terminated
+     Reason:     {noproc,{gen_server,call,[<0.300.0>,{call,{'basic.get',0,<<"genstages">>,false},none,<0.297.0>},60000]}}
+     Offender:   [{pid,<0.297.0>},{id,'Elixir.Genstages.RabbitMQ.Client'},{mfargs,{'Elixir.Genstages.RabbitMQ.Client',start_link,[]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-07-25 00:07:44 =ERROR REPORT====
+** Generic server 'Elixir.Genstages.RabbitMQ.Client' terminating 
+** Last message in was {'$gen_cast',{get,<<"genstages">>}}
+** When Server state == #{'__struct__' => 'Elixir.AMQP.Channel',conn => #{'__struct__' => 'Elixir.AMQP.Connection',pid => <0.288.0>},pid => <0.314.0>}
+** Reason for termination == 
+** {{{shutdown,{server_initiated_close,404,<<"NOT_FOUND - no queue 'genstages' in vhost '/'">>}},{gen_server,call,[<0.314.0>,{call,{'basic.get',0,<<"genstages">>,false},none,<0.311.0>},60000]}},[{gen_server,call,3,[{file,"gen_server.erl"},{line,214}]},{'Elixir.AMQP.Basic',get,3,[{file,"lib/amqp/basic.ex"},{line,161}]},{'Elixir.Genstages.RabbitMQ.Client',handle_cast,2,[{file,"lib/genstages/rabbitmq/client.ex"},{line,26}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,616}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,686}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+2018-07-25 00:07:44 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Genstages.RabbitMQ.Client:init/1
+    pid: <0.311.0>
+    registered_name: 'Elixir.Genstages.RabbitMQ.Client'
+    exception exit: {{{shutdown,{server_initiated_close,404,<<"NOT_FOUND - no queue 'genstages' in vhost '/'">>}},{gen_server,call,[<0.314.0>,{call,{'basic.get',0,<<"genstages">>,false},none,<0.311.0>},60000]}},[{gen_server,call,3,[{file,"gen_server.erl"},{line,214}]},{'Elixir.AMQP.Basic',get,3,[{file,"lib/amqp/basic.ex"},{line,161}]},{'Elixir.Genstages.RabbitMQ.Client',handle_cast,2,[{file,"lib/genstages/rabbitmq/client.ex"},{line,26}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,616}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,686}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['Elixir.Genstages.RabbitMQ.Supervisor','Elixir.Genstages.Supervisor',<0.272.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.284.0>]
+    dictionary: [{gen_server_call_timeout,60000}]
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 314
+  neighbours:
+2018-07-25 00:07:44 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Genstages.RabbitMQ.Supervisor'}
+     Context:    child_terminated
+     Reason:     {{shutdown,{server_initiated_close,404,<<"NOT_FOUND - no queue 'genstages' in vhost '/'">>}},{gen_server,call,[<0.314.0>,{call,{'basic.get',0,<<"genstages">>,false},none,<0.311.0>},60000]}}
+     Offender:   [{pid,<0.311.0>},{id,'Elixir.Genstages.RabbitMQ.Client'},{mfargs,{'Elixir.Genstages.RabbitMQ.Client',start_link,[]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-07-25 00:09:32 =ERROR REPORT====
+** Generic server 'Elixir.Genstages.RabbitMQ.Client' terminating 
+** Last message in was {'$gen_cast',{get,<<"genstages">>}}
+** When Server state == #{'__struct__' => 'Elixir.AMQP.Channel',conn => #{'__struct__' => 'Elixir.AMQP.Connection',pid => <0.288.0>},pid => <0.320.0>}
+** Reason for termination == 
+** {{{shutdown,{server_initiated_close,404,<<"NOT_FOUND - no queue 'genstages' in vhost '/'">>}},{gen_server,call,[<0.320.0>,{call,{'basic.get',0,<<"genstages">>,false},none,<0.317.0>},60000]}},[{gen_server,call,3,[{file,"gen_server.erl"},{line,214}]},{'Elixir.AMQP.Basic',get,3,[{file,"lib/amqp/basic.ex"},{line,161}]},{'Elixir.Genstages.RabbitMQ.Client',handle_cast,2,[{file,"lib/genstages/rabbitmq/client.ex"},{line,26}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,616}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,686}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+2018-07-25 00:09:32 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Genstages.RabbitMQ.Client:init/1
+    pid: <0.317.0>
+    registered_name: 'Elixir.Genstages.RabbitMQ.Client'
+    exception exit: {{{shutdown,{server_initiated_close,404,<<"NOT_FOUND - no queue 'genstages' in vhost '/'">>}},{gen_server,call,[<0.320.0>,{call,{'basic.get',0,<<"genstages">>,false},none,<0.317.0>},60000]}},[{gen_server,call,3,[{file,"gen_server.erl"},{line,214}]},{'Elixir.AMQP.Basic',get,3,[{file,"lib/amqp/basic.ex"},{line,161}]},{'Elixir.Genstages.RabbitMQ.Client',handle_cast,2,[{file,"lib/genstages/rabbitmq/client.ex"},{line,26}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,616}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,686}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['Elixir.Genstages.RabbitMQ.Supervisor','Elixir.Genstages.Supervisor',<0.272.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.284.0>]
+    dictionary: [{gen_server_call_timeout,60000}]
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 314
+  neighbours:
+2018-07-25 00:09:32 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Genstages.RabbitMQ.Supervisor'}
+     Context:    child_terminated
+     Reason:     {{shutdown,{server_initiated_close,404,<<"NOT_FOUND - no queue 'genstages' in vhost '/'">>}},{gen_server,call,[<0.320.0>,{call,{'basic.get',0,<<"genstages">>,false},none,<0.317.0>},60000]}}
+     Offender:   [{pid,<0.317.0>},{id,'Elixir.Genstages.RabbitMQ.Client'},{mfargs,{'Elixir.Genstages.RabbitMQ.Client',start_link,[]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-07-25 00:09:37 =ERROR REPORT====
+** Generic server 'Elixir.Genstages.RabbitMQ.Client' terminating 
+** Last message in was {'$gen_cast',{get,<<"genstages">>}}
+** When Server state == #{'__struct__' => 'Elixir.AMQP.Channel',conn => #{'__struct__' => 'Elixir.AMQP.Connection',pid => <0.288.0>},pid => <0.327.0>}
+** Reason for termination == 
+** {{noproc,{gen_server,call,[<0.327.0>,{call,{'basic.get',0,<<"genstages">>,false},none,<0.324.0>},60000]}},[{gen_server,call,3,[{file,"gen_server.erl"},{line,214}]},{'Elixir.AMQP.Basic',get,3,[{file,"lib/amqp/basic.ex"},{line,161}]},{'Elixir.Genstages.RabbitMQ.Client',handle_cast,2,[{file,"lib/genstages/rabbitmq/client.ex"},{line,26}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,616}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,686}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+2018-07-25 00:09:37 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Genstages.RabbitMQ.Client:init/1
+    pid: <0.324.0>
+    registered_name: 'Elixir.Genstages.RabbitMQ.Client'
+    exception exit: {{noproc,{gen_server,call,[<0.327.0>,{call,{'basic.get',0,<<"genstages">>,false},none,<0.324.0>},60000]}},[{gen_server,call,3,[{file,"gen_server.erl"},{line,214}]},{'Elixir.AMQP.Basic',get,3,[{file,"lib/amqp/basic.ex"},{line,161}]},{'Elixir.Genstages.RabbitMQ.Client',handle_cast,2,[{file,"lib/genstages/rabbitmq/client.ex"},{line,26}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,616}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,686}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['Elixir.Genstages.RabbitMQ.Supervisor','Elixir.Genstages.Supervisor',<0.272.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.284.0>]
+    dictionary: [{gen_server_call_timeout,60000}]
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 418
+  neighbours:
+2018-07-25 00:09:37 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Genstages.RabbitMQ.Supervisor'}
+     Context:    child_terminated
+     Reason:     {noproc,{gen_server,call,[<0.327.0>,{call,{'basic.get',0,<<"genstages">>,false},none,<0.324.0>},60000]}}
+     Offender:   [{pid,<0.324.0>},{id,'Elixir.Genstages.RabbitMQ.Client'},{mfargs,{'Elixir.Genstages.RabbitMQ.Client',start_link,[]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-07-25 00:13:14 =ERROR REPORT====
+** Generic server 'Elixir.Genstages.RabbitMQ.Client' terminating 
+** Last message in was {'$gen_cast',{get,<<"genstages">>}}
+** When Server state == #{'__struct__' => 'Elixir.AMQP.Channel',conn => #{'__struct__' => 'Elixir.AMQP.Connection',pid => <0.288.0>},pid => <0.334.0>}
+** Reason for termination == 
+** {{noproc,{gen_server,call,[<0.334.0>,{call,{'basic.get',0,<<"genstages">>,false},none,<0.330.0>},60000]}},[{gen_server,call,3,[{file,"gen_server.erl"},{line,214}]},{'Elixir.AMQP.Basic',get,3,[{file,"lib/amqp/basic.ex"},{line,161}]},{'Elixir.Genstages.RabbitMQ.Client',handle_cast,2,[{file,"lib/genstages/rabbitmq/client.ex"},{line,26}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,616}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,686}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+2018-07-25 00:13:14 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Genstages.RabbitMQ.Client:init/1
+    pid: <0.330.0>
+    registered_name: 'Elixir.Genstages.RabbitMQ.Client'
+    exception exit: {{noproc,{gen_server,call,[<0.334.0>,{call,{'basic.get',0,<<"genstages">>,false},none,<0.330.0>},60000]}},[{gen_server,call,3,[{file,"gen_server.erl"},{line,214}]},{'Elixir.AMQP.Basic',get,3,[{file,"lib/amqp/basic.ex"},{line,161}]},{'Elixir.Genstages.RabbitMQ.Client',handle_cast,2,[{file,"lib/genstages/rabbitmq/client.ex"},{line,26}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,616}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,686}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['Elixir.Genstages.RabbitMQ.Supervisor','Elixir.Genstages.Supervisor',<0.272.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.284.0>]
+    dictionary: [{gen_server_call_timeout,60000}]
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 418
+  neighbours:
+2018-07-25 00:13:14 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Genstages.RabbitMQ.Supervisor'}
+     Context:    child_terminated
+     Reason:     {noproc,{gen_server,call,[<0.334.0>,{call,{'basic.get',0,<<"genstages">>,false},none,<0.330.0>},60000]}}
+     Offender:   [{pid,<0.330.0>},{id,'Elixir.Genstages.RabbitMQ.Client'},{mfargs,{'Elixir.Genstages.RabbitMQ.Client',start_link,[]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-07-25 00:13:23 =ERROR REPORT====
+** Generic server 'Elixir.Genstages.RabbitMQ.Client' terminating 
+** Last message in was {'$gen_cast',{get,<<"genstages">>}}
+** When Server state == #{'__struct__' => 'Elixir.AMQP.Channel',conn => #{'__struct__' => 'Elixir.AMQP.Connection',pid => <0.288.0>},pid => <0.343.0>}
+** Reason for termination == 
+** {{{shutdown,{server_initiated_close,404,<<"NOT_FOUND - no queue 'genstages' in vhost '/'">>}},{gen_server,call,[<0.343.0>,{call,{'basic.get',0,<<"genstages">>,false},none,<0.340.0>},60000]}},[{gen_server,call,3,[{file,"gen_server.erl"},{line,214}]},{'Elixir.AMQP.Basic',get,3,[{file,"lib/amqp/basic.ex"},{line,161}]},{'Elixir.Genstages.RabbitMQ.Client',handle_cast,2,[{file,"lib/genstages/rabbitmq/client.ex"},{line,26}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,616}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,686}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+2018-07-25 00:13:23 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Genstages.RabbitMQ.Client:init/1
+    pid: <0.340.0>
+    registered_name: 'Elixir.Genstages.RabbitMQ.Client'
+    exception exit: {{{shutdown,{server_initiated_close,404,<<"NOT_FOUND - no queue 'genstages' in vhost '/'">>}},{gen_server,call,[<0.343.0>,{call,{'basic.get',0,<<"genstages">>,false},none,<0.340.0>},60000]}},[{gen_server,call,3,[{file,"gen_server.erl"},{line,214}]},{'Elixir.AMQP.Basic',get,3,[{file,"lib/amqp/basic.ex"},{line,161}]},{'Elixir.Genstages.RabbitMQ.Client',handle_cast,2,[{file,"lib/genstages/rabbitmq/client.ex"},{line,26}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,616}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,686}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['Elixir.Genstages.RabbitMQ.Supervisor','Elixir.Genstages.Supervisor',<0.272.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.284.0>]
+    dictionary: [{gen_server_call_timeout,60000}]
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 314
+  neighbours:
+2018-07-25 00:13:23 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Genstages.RabbitMQ.Supervisor'}
+     Context:    child_terminated
+     Reason:     {{shutdown,{server_initiated_close,404,<<"NOT_FOUND - no queue 'genstages' in vhost '/'">>}},{gen_server,call,[<0.343.0>,{call,{'basic.get',0,<<"genstages">>,false},none,<0.340.0>},60000]}}
+     Offender:   [{pid,<0.340.0>},{id,'Elixir.Genstages.RabbitMQ.Client'},{mfargs,{'Elixir.Genstages.RabbitMQ.Client',start_link,[]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-07-25 00:22:53 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    child_terminated
+     Reason:     normal
+     Offender:   [{pid,<0.217.0>},{id,'Elixir.Logger.ErrorHandler'},{mfargs,{'Elixir.Logger.Watcher',start_link,[{error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-07-25 00:23:25 =ERROR REPORT====
+** Generic server 'Elixir.Genstages.RabbitMQ.Client' terminating 
+** Last message in was {'$gen_cast',{get}}
+** When Server state == #{'__struct__' => 'Elixir.AMQP.Channel',conn => #{'__struct__' => 'Elixir.AMQP.Connection',pid => <0.294.0>},pid => <0.310.0>}
+** Reason for termination == 
+** {bad_return_value,{reply,{ok,<<"\"WOW1\"">>,#{app_id => undefined,cluster_id => undefined,content_encoding => undefined,content_type => undefined,correlation_id => undefined,delivery_tag => 2,exchange => <<"genstages_exchange">>,expiration => undefined,headers => undefined,message_count => 2,message_id => undefined,persistent => false,priority => undefined,redelivered => false,reply_to => undefined,routing_key => <<>>,timestamp => undefined,type => undefined,user_id => undefined}},#{'__struct__' => 'Elixir.AMQP.Channel',conn => #{'__struct__' => 'Elixir.AMQP.Connection',pid => <0.294.0>},pid => <0.310.0>}}}
+2018-07-25 00:23:25 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Genstages.RabbitMQ.Client:init/1
+    pid: <0.307.0>
+    registered_name: 'Elixir.Genstages.RabbitMQ.Client'
+    exception exit: {{bad_return_value,{reply,{ok,<<"\"WOW1\"">>,#{app_id => undefined,cluster_id => undefined,content_encoding => undefined,content_type => undefined,correlation_id => undefined,delivery_tag => 2,exchange => <<"genstages_exchange">>,expiration => undefined,headers => undefined,message_count => 2,message_id => undefined,persistent => false,priority => undefined,redelivered => false,reply_to => undefined,routing_key => <<>>,timestamp => undefined,type => undefined,user_id => undefined}},#{'__struct__' => 'Elixir.AMQP.Channel',conn => #{'__struct__' => 'Elixir.AMQP.Connection',pid => <0.294.0>},pid => <0.310.0>}}},[{gen_server,handle_common_reply,8,[{file,"gen_server.erl"},{line,730}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['Elixir.Genstages.RabbitMQ.Supervisor','Elixir.Genstages.Supervisor',<0.278.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.290.0>]
+    dictionary: [{gen_server_call_timeout,60000}]
+    trap_exit: false
+    status: running
+    heap_size: 376
+    stack_size: 27
+    reductions: 786
+  neighbours:
+2018-07-25 00:23:25 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Genstages.RabbitMQ.Supervisor'}
+     Context:    child_terminated
+     Reason:     {bad_return_value,{reply,{ok,<<"\"WOW1\"">>,#{app_id => undefined,cluster_id => undefined,content_encoding => undefined,content_type => undefined,correlation_id => undefined,delivery_tag => 2,exchange => <<"genstages_exchange">>,expiration => undefined,headers => undefined,message_count => 2,message_id => undefined,persistent => false,priority => undefined,redelivered => false,reply_to => undefined,routing_key => <<>>,timestamp => undefined,type => undefined,user_id => undefined}},#{'__struct__' => 'Elixir.AMQP.Channel',conn => #{'__struct__' => 'Elixir.AMQP.Connection',pid => <0.294.0>},pid => <0.310.0>}}}
+     Offender:   [{pid,<0.307.0>},{id,'Elixir.Genstages.RabbitMQ.Client'},{mfargs,{'Elixir.Genstages.RabbitMQ.Client',start_link,[]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-07-25 00:24:17 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    child_terminated
+     Reason:     normal
+     Offender:   [{pid,<0.211.0>},{id,'Elixir.Logger.ErrorHandler'},{mfargs,{'Elixir.Logger.Watcher',start_link,[{error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-07-25 00:24:33 =ERROR REPORT====
+** Generic server 'Elixir.Genstages.RabbitMQ.Client' terminating 
+** Last message in was {'$gen_cast',{get}}
+** When Server state == #{'__struct__' => 'Elixir.AMQP.Channel',conn => #{'__struct__' => 'Elixir.AMQP.Connection',pid => <0.288.0>},pid => <0.304.0>}
+** Reason for termination == 
+** {bad_return_value,{reply,<<"\"WOW\"">>,#{'__struct__' => 'Elixir.AMQP.Channel',conn => #{'__struct__' => 'Elixir.AMQP.Connection',pid => <0.288.0>},pid => <0.304.0>}}}
+2018-07-25 00:24:33 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Genstages.RabbitMQ.Client:init/1
+    pid: <0.301.0>
+    registered_name: 'Elixir.Genstages.RabbitMQ.Client'
+    exception exit: {{bad_return_value,{reply,<<"\"WOW\"">>,#{'__struct__' => 'Elixir.AMQP.Channel',conn => #{'__struct__' => 'Elixir.AMQP.Connection',pid => <0.288.0>},pid => <0.304.0>}}},[{gen_server,handle_common_reply,8,[{file,"gen_server.erl"},{line,730}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['Elixir.Genstages.RabbitMQ.Supervisor','Elixir.Genstages.Supervisor',<0.272.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.284.0>]
+    dictionary: [{gen_server_call_timeout,60000}]
+    trap_exit: false
+    status: running
+    heap_size: 376
+    stack_size: 27
+    reductions: 300
+  neighbours:
+2018-07-25 00:24:33 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Genstages.RabbitMQ.Supervisor'}
+     Context:    child_terminated
+     Reason:     {bad_return_value,{reply,<<"\"WOW\"">>,#{'__struct__' => 'Elixir.AMQP.Channel',conn => #{'__struct__' => 'Elixir.AMQP.Connection',pid => <0.288.0>},pid => <0.304.0>}}}
+     Offender:   [{pid,<0.301.0>},{id,'Elixir.Genstages.RabbitMQ.Client'},{mfargs,{'Elixir.Genstages.RabbitMQ.Client',start_link,[]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-07-25 00:25:02 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    child_terminated
+     Reason:     normal
+     Offender:   [{pid,<0.211.0>},{id,'Elixir.Logger.ErrorHandler'},{mfargs,{'Elixir.Logger.Watcher',start_link,[{error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-07-25 00:25:11 =ERROR REPORT====
+** Generic server 'Elixir.Genstages.RabbitMQ.Client' terminating 
+** Last message in was {'$gen_cast',{get}}
+** When Server state == #{'__struct__' => 'Elixir.AMQP.Channel',conn => #{'__struct__' => 'Elixir.AMQP.Connection',pid => <0.288.0>},pid => <0.304.0>}
+** Reason for termination == 
+** {bad_return_value,{reply,<<"\"WOW\"">>,#{'__struct__' => 'Elixir.AMQP.Channel',conn => #{'__struct__' => 'Elixir.AMQP.Connection',pid => <0.288.0>},pid => <0.304.0>}}}
+2018-07-25 00:25:11 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Genstages.RabbitMQ.Client:init/1
+    pid: <0.301.0>
+    registered_name: 'Elixir.Genstages.RabbitMQ.Client'
+    exception exit: {{bad_return_value,{reply,<<"\"WOW\"">>,#{'__struct__' => 'Elixir.AMQP.Channel',conn => #{'__struct__' => 'Elixir.AMQP.Connection',pid => <0.288.0>},pid => <0.304.0>}}},[{gen_server,handle_common_reply,8,[{file,"gen_server.erl"},{line,730}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['Elixir.Genstages.RabbitMQ.Supervisor','Elixir.Genstages.Supervisor',<0.272.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.284.0>]
+    dictionary: [{gen_server_call_timeout,60000}]
+    trap_exit: false
+    status: running
+    heap_size: 376
+    stack_size: 27
+    reductions: 395
+  neighbours:
+2018-07-25 00:25:11 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Genstages.RabbitMQ.Supervisor'}
+     Context:    child_terminated
+     Reason:     {bad_return_value,{reply,<<"\"WOW\"">>,#{'__struct__' => 'Elixir.AMQP.Channel',conn => #{'__struct__' => 'Elixir.AMQP.Connection',pid => <0.288.0>},pid => <0.304.0>}}}
+     Offender:   [{pid,<0.301.0>},{id,'Elixir.Genstages.RabbitMQ.Client'},{mfargs,{'Elixir.Genstages.RabbitMQ.Client',start_link,[]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-07-25 00:26:04 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    child_terminated
+     Reason:     normal
+     Offender:   [{pid,<0.211.0>},{id,'Elixir.Logger.ErrorHandler'},{mfargs,{'Elixir.Logger.Watcher',start_link,[{error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-07-25 00:27:32 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    child_terminated
+     Reason:     normal
+     Offender:   [{pid,<0.211.0>},{id,'Elixir.Logger.ErrorHandler'},{mfargs,{'Elixir.Logger.Watcher',start_link,[{error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-07-25 00:27:49 =ERROR REPORT====
+** Generic server 'Elixir.Genstages.RabbitMQ.Client' terminating 
+** Last message in was {get}
+** When Server state == #{'__struct__' => 'Elixir.AMQP.Channel',conn => #{'__struct__' => 'Elixir.AMQP.Connection',pid => <0.288.0>},pid => <0.304.0>}
+** Reason for termination == 
+** {{badmatch,{empty,#{cluster_id => <<>>}}},[{'Elixir.Genstages.RabbitMQ.Client',handle_call,3,[{file,"lib/genstages/rabbitmq/client.ex"},{line,26}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,636}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,665}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+** Client <0.308.0> stacktrace
+** [{gen,do_call,4,[{file,"gen.erl"},{line,169}]},{'Elixir.GenServer',call,3,[{file,"lib/gen_server.ex"},{line,771}]},{erl_eval,do_apply,6,[{file,"erl_eval.erl"},{line,670}]},{elixir,eval_forms,4,[{file,"src/elixir.erl"},{line,239}]},{'Elixir.IEx.Evaluator',handle_eval,5,[{file,"lib/iex/evaluator.ex"},{line,231}]},{'Elixir.IEx.Evaluator',do_eval,3,[{file,"lib/iex/evaluator.ex"},{line,212}]},{'Elixir.IEx.Evaluator',eval,3,[{file,"lib/iex/evaluator.ex"},{line,190}]},{'Elixir.IEx.Evaluator',loop,1,[{file,"lib/iex/evaluator.ex"},{line,89}]},{'Elixir.IEx.Evaluator',init,4,[{file,"lib/iex/evaluator.ex"},{line,24}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]
+2018-07-25 00:27:49 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Genstages.RabbitMQ.Client:init/1
+    pid: <0.301.0>
+    registered_name: 'Elixir.Genstages.RabbitMQ.Client'
+    exception error: {{badmatch,{empty,#{cluster_id => <<>>}}},[{'Elixir.Genstages.RabbitMQ.Client',handle_call,3,[{file,"lib/genstages/rabbitmq/client.ex"},{line,26}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,636}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,665}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['Elixir.Genstages.RabbitMQ.Supervisor','Elixir.Genstages.Supervisor',<0.272.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.284.0>]
+    dictionary: [{gen_server_call_timeout,60000}]
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 736
+  neighbours:
+2018-07-25 00:27:49 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Genstages.RabbitMQ.Supervisor'}
+     Context:    child_terminated
+     Reason:     {{badmatch,{empty,#{cluster_id => <<>>}}},[{'Elixir.Genstages.RabbitMQ.Client',handle_call,3,[{file,"lib/genstages/rabbitmq/client.ex"},{line,26}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,636}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,665}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+     Offender:   [{pid,<0.301.0>},{id,'Elixir.Genstages.RabbitMQ.Client'},{mfargs,{'Elixir.Genstages.RabbitMQ.Client',start_link,[]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-07-25 00:27:50 =ERROR REPORT====
+** Generic server 'Elixir.Genstages.RabbitMQ.Client' terminating 
+** Last message in was {get}
+** When Server state == #{'__struct__' => 'Elixir.AMQP.Channel',conn => #{'__struct__' => 'Elixir.AMQP.Connection',pid => <0.288.0>},pid => <0.317.0>}
+** Reason for termination == 
+** {{badmatch,{empty,#{cluster_id => <<>>}}},[{'Elixir.Genstages.RabbitMQ.Client',handle_call,3,[{file,"lib/genstages/rabbitmq/client.ex"},{line,26}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,636}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,665}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+** Client <0.308.0> stacktrace
+** [{gen,do_call,4,[{file,"gen.erl"},{line,169}]},{'Elixir.GenServer',call,3,[{file,"lib/gen_server.ex"},{line,771}]},{erl_eval,do_apply,6,[{file,"erl_eval.erl"},{line,670}]},{elixir,eval_forms,4,[{file,"src/elixir.erl"},{line,239}]},{'Elixir.IEx.Evaluator',handle_eval,5,[{file,"lib/iex/evaluator.ex"},{line,231}]},{'Elixir.IEx.Evaluator',do_eval,3,[{file,"lib/iex/evaluator.ex"},{line,212}]},{'Elixir.IEx.Evaluator',eval,3,[{file,"lib/iex/evaluator.ex"},{line,190}]},{'Elixir.IEx.Evaluator',loop,1,[{file,"lib/iex/evaluator.ex"},{line,89}]},{'Elixir.IEx.Evaluator',init,4,[{file,"lib/iex/evaluator.ex"},{line,24}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]
+2018-07-25 00:27:50 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Genstages.RabbitMQ.Client:init/1
+    pid: <0.314.0>
+    registered_name: 'Elixir.Genstages.RabbitMQ.Client'
+    exception error: {{badmatch,{empty,#{cluster_id => <<>>}}},[{'Elixir.Genstages.RabbitMQ.Client',handle_call,3,[{file,"lib/genstages/rabbitmq/client.ex"},{line,26}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,636}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,665}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['Elixir.Genstages.RabbitMQ.Supervisor','Elixir.Genstages.Supervisor',<0.272.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.284.0>]
+    dictionary: [{gen_server_call_timeout,60000}]
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 375
+  neighbours:
+2018-07-25 00:27:50 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Genstages.RabbitMQ.Supervisor'}
+     Context:    child_terminated
+     Reason:     {{badmatch,{empty,#{cluster_id => <<>>}}},[{'Elixir.Genstages.RabbitMQ.Client',handle_call,3,[{file,"lib/genstages/rabbitmq/client.ex"},{line,26}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,636}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,665}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+     Offender:   [{pid,<0.314.0>},{id,'Elixir.Genstages.RabbitMQ.Client'},{mfargs,{'Elixir.Genstages.RabbitMQ.Client',start_link,[]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-07-25 00:27:51 =ERROR REPORT====
+** Generic server 'Elixir.Genstages.RabbitMQ.Client' terminating 
+** Last message in was {get}
+** When Server state == #{'__struct__' => 'Elixir.AMQP.Channel',conn => #{'__struct__' => 'Elixir.AMQP.Connection',pid => <0.288.0>},pid => <0.324.0>}
+** Reason for termination == 
+** {{badmatch,{empty,#{cluster_id => <<>>}}},[{'Elixir.Genstages.RabbitMQ.Client',handle_call,3,[{file,"lib/genstages/rabbitmq/client.ex"},{line,26}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,636}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,665}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+** Client <0.308.0> stacktrace
+** [{gen,do_call,4,[{file,"gen.erl"},{line,169}]},{'Elixir.GenServer',call,3,[{file,"lib/gen_server.ex"},{line,771}]},{erl_eval,do_apply,6,[{file,"erl_eval.erl"},{line,670}]},{elixir,eval_forms,4,[{file,"src/elixir.erl"},{line,239}]},{'Elixir.IEx.Evaluator',handle_eval,5,[{file,"lib/iex/evaluator.ex"},{line,231}]},{'Elixir.IEx.Evaluator',do_eval,3,[{file,"lib/iex/evaluator.ex"},{line,212}]},{'Elixir.IEx.Evaluator',eval,3,[{file,"lib/iex/evaluator.ex"},{line,190}]},{'Elixir.IEx.Evaluator',loop,1,[{file,"lib/iex/evaluator.ex"},{line,89}]},{'Elixir.IEx.Evaluator',init,4,[{file,"lib/iex/evaluator.ex"},{line,24}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]
+2018-07-25 00:27:51 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Genstages.RabbitMQ.Client:init/1
+    pid: <0.320.0>
+    registered_name: 'Elixir.Genstages.RabbitMQ.Client'
+    exception error: {{badmatch,{empty,#{cluster_id => <<>>}}},[{'Elixir.Genstages.RabbitMQ.Client',handle_call,3,[{file,"lib/genstages/rabbitmq/client.ex"},{line,26}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,636}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,665}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['Elixir.Genstages.RabbitMQ.Supervisor','Elixir.Genstages.Supervisor',<0.272.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.284.0>]
+    dictionary: [{gen_server_call_timeout,60000}]
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 375
+  neighbours:
+2018-07-25 00:27:51 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Genstages.RabbitMQ.Supervisor'}
+     Context:    child_terminated
+     Reason:     {{badmatch,{empty,#{cluster_id => <<>>}}},[{'Elixir.Genstages.RabbitMQ.Client',handle_call,3,[{file,"lib/genstages/rabbitmq/client.ex"},{line,26}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,636}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,665}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+     Offender:   [{pid,<0.320.0>},{id,'Elixir.Genstages.RabbitMQ.Client'},{mfargs,{'Elixir.Genstages.RabbitMQ.Client',start_link,[]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-07-25 00:27:51 =ERROR REPORT====
+** Generic server 'Elixir.Genstages.RabbitMQ.Client' terminating 
+** Last message in was {get}
+** When Server state == #{'__struct__' => 'Elixir.AMQP.Channel',conn => #{'__struct__' => 'Elixir.AMQP.Connection',pid => <0.288.0>},pid => <0.329.0>}
+** Reason for termination == 
+** {{badmatch,{empty,#{cluster_id => <<>>}}},[{'Elixir.Genstages.RabbitMQ.Client',handle_call,3,[{file,"lib/genstages/rabbitmq/client.ex"},{line,26}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,636}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,665}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+** Client <0.308.0> stacktrace
+** [{gen,do_call,4,[{file,"gen.erl"},{line,169}]},{'Elixir.GenServer',call,3,[{file,"lib/gen_server.ex"},{line,771}]},{erl_eval,do_apply,6,[{file,"erl_eval.erl"},{line,670}]},{elixir,eval_forms,4,[{file,"src/elixir.erl"},{line,239}]},{'Elixir.IEx.Evaluator',handle_eval,5,[{file,"lib/iex/evaluator.ex"},{line,231}]},{'Elixir.IEx.Evaluator',do_eval,3,[{file,"lib/iex/evaluator.ex"},{line,212}]},{'Elixir.IEx.Evaluator',eval,3,[{file,"lib/iex/evaluator.ex"},{line,190}]},{'Elixir.IEx.Evaluator',loop,1,[{file,"lib/iex/evaluator.ex"},{line,89}]},{'Elixir.IEx.Evaluator',init,4,[{file,"lib/iex/evaluator.ex"},{line,24}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]
+2018-07-25 00:27:51 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Genstages.RabbitMQ.Client:init/1
+    pid: <0.326.0>
+    registered_name: 'Elixir.Genstages.RabbitMQ.Client'
+    exception error: {{badmatch,{empty,#{cluster_id => <<>>}}},[{'Elixir.Genstages.RabbitMQ.Client',handle_call,3,[{file,"lib/genstages/rabbitmq/client.ex"},{line,26}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,636}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,665}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['Elixir.Genstages.RabbitMQ.Supervisor','Elixir.Genstages.Supervisor',<0.272.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.284.0>]
+    dictionary: [{gen_server_call_timeout,60000}]
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 375
+  neighbours:
+2018-07-25 00:27:51 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Genstages.RabbitMQ.Supervisor'}
+     Context:    child_terminated
+     Reason:     {{badmatch,{empty,#{cluster_id => <<>>}}},[{'Elixir.Genstages.RabbitMQ.Client',handle_call,3,[{file,"lib/genstages/rabbitmq/client.ex"},{line,26}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,636}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,665}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+     Offender:   [{pid,<0.326.0>},{id,'Elixir.Genstages.RabbitMQ.Client'},{mfargs,{'Elixir.Genstages.RabbitMQ.Client',start_link,[]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-07-25 00:27:51 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Genstages.RabbitMQ.Supervisor'}
+     Context:    shutdown
+     Reason:     reached_max_restart_intensity
+     Offender:   [{pid,<0.326.0>},{id,'Elixir.Genstages.RabbitMQ.Client'},{mfargs,{'Elixir.Genstages.RabbitMQ.Client',start_link,[]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-07-25 00:27:51 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Genstages.Supervisor'}
+     Context:    child_terminated
+     Reason:     shutdown
+     Offender:   [{pid,<0.284.0>},{id,'Elixir.Genstages.RabbitMQ.Supervisor'},{mfargs,{'Elixir.Genstages.RabbitMQ.Supervisor',start_link,[]}},{restart_type,permanent},{shutdown,infinity},{child_type,supervisor}]
+
+2018-07-25 00:27:52 =ERROR REPORT====
+** Generic server 'Elixir.Genstages.RabbitMQ.Client' terminating 
+** Last message in was {get}
+** When Server state == #{'__struct__' => 'Elixir.AMQP.Channel',conn => #{'__struct__' => 'Elixir.AMQP.Connection',pid => <0.336.0>},pid => <0.351.0>}
+** Reason for termination == 
+** {{badmatch,{empty,#{cluster_id => <<>>}}},[{'Elixir.Genstages.RabbitMQ.Client',handle_call,3,[{file,"lib/genstages/rabbitmq/client.ex"},{line,26}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,636}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,665}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+** Client <0.308.0> stacktrace
+** [{gen,do_call,4,[{file,"gen.erl"},{line,169}]},{'Elixir.GenServer',call,3,[{file,"lib/gen_server.ex"},{line,771}]},{erl_eval,do_apply,6,[{file,"erl_eval.erl"},{line,670}]},{elixir,eval_forms,4,[{file,"src/elixir.erl"},{line,239}]},{'Elixir.IEx.Evaluator',handle_eval,5,[{file,"lib/iex/evaluator.ex"},{line,231}]},{'Elixir.IEx.Evaluator',do_eval,3,[{file,"lib/iex/evaluator.ex"},{line,212}]},{'Elixir.IEx.Evaluator',eval,3,[{file,"lib/iex/evaluator.ex"},{line,190}]},{'Elixir.IEx.Evaluator',loop,1,[{file,"lib/iex/evaluator.ex"},{line,89}]},{'Elixir.IEx.Evaluator',init,4,[{file,"lib/iex/evaluator.ex"},{line,24}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]
+2018-07-25 00:27:52 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Genstages.RabbitMQ.Client:init/1
+    pid: <0.348.0>
+    registered_name: 'Elixir.Genstages.RabbitMQ.Client'
+    exception error: {{badmatch,{empty,#{cluster_id => <<>>}}},[{'Elixir.Genstages.RabbitMQ.Client',handle_call,3,[{file,"lib/genstages/rabbitmq/client.ex"},{line,26}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,636}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,665}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['Elixir.Genstages.RabbitMQ.Supervisor','Elixir.Genstages.Supervisor',<0.272.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.332.0>]
+    dictionary: [{gen_server_call_timeout,60000}]
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 375
+  neighbours:
+2018-07-25 00:27:52 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Genstages.RabbitMQ.Supervisor'}
+     Context:    child_terminated
+     Reason:     {{badmatch,{empty,#{cluster_id => <<>>}}},[{'Elixir.Genstages.RabbitMQ.Client',handle_call,3,[{file,"lib/genstages/rabbitmq/client.ex"},{line,26}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,636}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,665}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+     Offender:   [{pid,<0.348.0>},{id,'Elixir.Genstages.RabbitMQ.Client'},{mfargs,{'Elixir.Genstages.RabbitMQ.Client',start_link,[]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-07-25 00:27:53 =ERROR REPORT====
+** Generic server 'Elixir.Genstages.RabbitMQ.Client' terminating 
+** Last message in was {get}
+** When Server state == #{'__struct__' => 'Elixir.AMQP.Channel',conn => #{'__struct__' => 'Elixir.AMQP.Connection',pid => <0.336.0>},pid => <0.356.0>}
+** Reason for termination == 
+** {{badmatch,{empty,#{cluster_id => <<>>}}},[{'Elixir.Genstages.RabbitMQ.Client',handle_call,3,[{file,"lib/genstages/rabbitmq/client.ex"},{line,26}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,636}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,665}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+** Client <0.308.0> stacktrace
+** [{gen,do_call,4,[{file,"gen.erl"},{line,169}]},{'Elixir.GenServer',call,3,[{file,"lib/gen_server.ex"},{line,771}]},{erl_eval,do_apply,6,[{file,"erl_eval.erl"},{line,670}]},{elixir,eval_forms,4,[{file,"src/elixir.erl"},{line,239}]},{'Elixir.IEx.Evaluator',handle_eval,5,[{file,"lib/iex/evaluator.ex"},{line,231}]},{'Elixir.IEx.Evaluator',do_eval,3,[{file,"lib/iex/evaluator.ex"},{line,212}]},{'Elixir.IEx.Evaluator',eval,3,[{file,"lib/iex/evaluator.ex"},{line,190}]},{'Elixir.IEx.Evaluator',loop,1,[{file,"lib/iex/evaluator.ex"},{line,89}]},{'Elixir.IEx.Evaluator',init,4,[{file,"lib/iex/evaluator.ex"},{line,24}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]
+2018-07-25 00:27:53 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Genstages.RabbitMQ.Client:init/1
+    pid: <0.353.0>
+    registered_name: 'Elixir.Genstages.RabbitMQ.Client'
+    exception error: {{badmatch,{empty,#{cluster_id => <<>>}}},[{'Elixir.Genstages.RabbitMQ.Client',handle_call,3,[{file,"lib/genstages/rabbitmq/client.ex"},{line,26}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,636}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,665}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['Elixir.Genstages.RabbitMQ.Supervisor','Elixir.Genstages.Supervisor',<0.272.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.332.0>]
+    dictionary: [{gen_server_call_timeout,60000}]
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 375
+  neighbours:
+2018-07-25 00:27:53 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Genstages.RabbitMQ.Supervisor'}
+     Context:    child_terminated
+     Reason:     {{badmatch,{empty,#{cluster_id => <<>>}}},[{'Elixir.Genstages.RabbitMQ.Client',handle_call,3,[{file,"lib/genstages/rabbitmq/client.ex"},{line,26}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,636}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,665}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+     Offender:   [{pid,<0.353.0>},{id,'Elixir.Genstages.RabbitMQ.Client'},{mfargs,{'Elixir.Genstages.RabbitMQ.Client',start_link,[]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-07-25 00:29:26 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    child_terminated
+     Reason:     normal
+     Offender:   [{pid,<0.211.0>},{id,'Elixir.Logger.ErrorHandler'},{mfargs,{'Elixir.Logger.Watcher',start_link,[{error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-07-25 00:30:55 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    child_terminated
+     Reason:     normal
+     Offender:   [{pid,<0.203.0>},{id,'Elixir.Logger.ErrorHandler'},{mfargs,{'Elixir.Logger.Watcher',start_link,[{error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-07-25 00:34:02 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    child_terminated
+     Reason:     normal
+     Offender:   [{pid,<0.211.0>},{id,'Elixir.Logger.ErrorHandler'},{mfargs,{'Elixir.Logger.Watcher',start_link,[{error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-07-25 00:34:21 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    child_terminated
+     Reason:     normal
+     Offender:   [{pid,<0.203.0>},{id,'Elixir.Logger.ErrorHandler'},{mfargs,{'Elixir.Logger.Watcher',start_link,[{error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-07-25 00:36:35 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    child_terminated
+     Reason:     normal
+     Offender:   [{pid,<0.212.0>},{id,'Elixir.Logger.ErrorHandler'},{mfargs,{'Elixir.Logger.Watcher',start_link,[{error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-07-25 00:38:25 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    child_terminated
+     Reason:     normal
+     Offender:   [{pid,<0.211.0>},{id,'Elixir.Logger.ErrorHandler'},{mfargs,{'Elixir.Logger.Watcher',start_link,[{error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-07-25 00:44:17 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    child_terminated
+     Reason:     normal
+     Offender:   [{pid,<0.348.0>},{id,'Elixir.Logger.ErrorHandler'},{mfargs,{'Elixir.Logger.Watcher',start_link,[{error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-07-25 00:44:17 =CRASH REPORT====
+  crasher:
+    initial call: supervisor:Elixir.Genstages.Samples.ConsumerSupervisor/1
+    pid: <0.444.0>
+    registered_name: []
+    exception exit: {noproc,[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,349}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['Elixir.Genstages.Supervisor',<0.409.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.410.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 376
+    stack_size: 27
+    reductions: 373
+  neighbours:
+2018-07-25 00:44:17 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Genstages.Supervisor'}
+     Context:    start_error
+     Reason:     noproc
+     Offender:   [{pid,undefined},{id,'Elixir.Genstages.Samples.ConsumerSupervisor'},{mfargs,{'Elixir.Genstages.Samples.ConsumerSupervisor',start_link,[]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-07-25 00:44:17 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.408.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,'Elixir.Genstages.Samples.ConsumerSupervisor',noproc}},{'Elixir.Genstages.Application',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,134}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.407.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.409.0>,normal}]
+    links: [<0.407.0>,<0.33.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 191
+  neighbours:
+2018-07-25 00:44:42 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    child_terminated
+     Reason:     normal
+     Offender:   [{pid,<0.348.0>},{id,'Elixir.Logger.ErrorHandler'},{mfargs,{'Elixir.Logger.Watcher',start_link,[{error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-07-25 00:44:49 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    child_terminated
+     Reason:     normal
+     Offender:   [{pid,<0.348.0>},{id,'Elixir.Logger.ErrorHandler'},{mfargs,{'Elixir.Logger.Watcher',start_link,[{error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-07-25 00:44:49 =CRASH REPORT====
+  crasher:
+    initial call: supervisor:Elixir.Genstages.Samples.ConsumerSupervisor/1
+    pid: <0.444.0>
+    registered_name: []
+    exception exit: {noproc,[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,349}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['Elixir.Genstages.Supervisor',<0.409.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.410.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 376
+    stack_size: 27
+    reductions: 373
+  neighbours:
+2018-07-25 00:44:49 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Genstages.Supervisor'}
+     Context:    start_error
+     Reason:     noproc
+     Offender:   [{pid,undefined},{id,'Elixir.Genstages.Samples.ConsumerSupervisor'},{mfargs,{'Elixir.Genstages.Samples.ConsumerSupervisor',start_link,[]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-07-25 00:44:49 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.408.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,'Elixir.Genstages.Samples.ConsumerSupervisor',noproc}},{'Elixir.Genstages.Application',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,134}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.407.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.409.0>,normal}]
+    links: [<0.407.0>,<0.33.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 376
+    stack_size: 27
+    reductions: 192
+  neighbours:
+2018-07-25 00:45:45 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    child_terminated
+     Reason:     normal
+     Offender:   [{pid,<0.211.0>},{id,'Elixir.Logger.ErrorHandler'},{mfargs,{'Elixir.Logger.Watcher',start_link,[{error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-07-25 00:45:45 =CRASH REPORT====
+  crasher:
+    initial call: supervisor:Elixir.Genstages.Samples.ConsumerSupervisor/1
+    pid: <0.307.0>
+    registered_name: []
+    exception exit: {noproc,[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,349}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['Elixir.Genstages.Supervisor',<0.272.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.273.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 376
+    stack_size: 27
+    reductions: 373
+  neighbours:
+2018-07-25 00:45:45 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Genstages.Supervisor'}
+     Context:    start_error
+     Reason:     noproc
+     Offender:   [{pid,undefined},{id,'Elixir.Genstages.Samples.ConsumerSupervisor'},{mfargs,{'Elixir.Genstages.Samples.ConsumerSupervisor',start_link,[]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-07-25 00:45:45 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.271.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,'Elixir.Genstages.Samples.ConsumerSupervisor',noproc}},{'Elixir.Genstages.Application',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,134}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.270.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.272.0>,normal}]
+    links: [<0.270.0>,<0.33.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 376
+    stack_size: 27
+    reductions: 192
+  neighbours:
+2018-07-25 00:47:15 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    child_terminated
+     Reason:     normal
+     Offender:   [{pid,<0.211.0>},{id,'Elixir.Logger.ErrorHandler'},{mfargs,{'Elixir.Logger.Watcher',start_link,[{error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-07-25 00:47:15 =CRASH REPORT====
+  crasher:
+    initial call: supervisor:Elixir.Genstages.Samples.ConsumerSupervisor/1
+    pid: <0.307.0>
+    registered_name: []
+    exception exit: {noproc,[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,349}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['Elixir.Genstages.Supervisor',<0.272.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.273.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 376
+    stack_size: 27
+    reductions: 373
+  neighbours:
+2018-07-25 00:47:15 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Genstages.Supervisor'}
+     Context:    start_error
+     Reason:     noproc
+     Offender:   [{pid,undefined},{id,'Elixir.Genstages.Samples.ConsumerSupervisor'},{mfargs,{'Elixir.Genstages.Samples.ConsumerSupervisor',start_link,[]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-07-25 00:47:15 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.271.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,'Elixir.Genstages.Samples.ConsumerSupervisor',noproc}},{'Elixir.Genstages.Application',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,134}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.270.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.272.0>,normal}]
+    links: [<0.270.0>,<0.33.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 376
+    stack_size: 27
+    reductions: 192
+  neighbours:
+2018-07-25 00:47:31 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    child_terminated
+     Reason:     normal
+     Offender:   [{pid,<0.211.0>},{id,'Elixir.Logger.ErrorHandler'},{mfargs,{'Elixir.Logger.Watcher',start_link,[{error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-07-25 00:49:45 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    child_terminated
+     Reason:     normal
+     Offender:   [{pid,<0.348.0>},{id,'Elixir.Logger.ErrorHandler'},{mfargs,{'Elixir.Logger.Watcher',start_link,[{error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-07-25 00:50:19 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    child_terminated
+     Reason:     normal
+     Offender:   [{pid,<0.348.0>},{id,'Elixir.Logger.ErrorHandler'},{mfargs,{'Elixir.Logger.Watcher',start_link,[{error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-07-25 00:50:50 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    child_terminated
+     Reason:     normal
+     Offender:   [{pid,<0.211.0>},{id,'Elixir.Logger.ErrorHandler'},{mfargs,{'Elixir.Logger.Watcher',start_link,[{error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-07-25 00:50:58 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    child_terminated
+     Reason:     normal
+     Offender:   [{pid,<0.348.0>},{id,'Elixir.Logger.ErrorHandler'},{mfargs,{'Elixir.Logger.Watcher',start_link,[{error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-07-25 00:50:58 =CRASH REPORT====
+  crasher:
+    initial call: supervisor:Elixir.Genstages.Samples.ConsumerSupervisor/1
+    pid: <0.444.0>
+    registered_name: []
+    exception exit: {noproc,[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,349}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['Elixir.Genstages.Supervisor',<0.409.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.410.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 376
+    stack_size: 27
+    reductions: 373
+  neighbours:
+2018-07-25 00:50:58 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Genstages.Supervisor'}
+     Context:    start_error
+     Reason:     noproc
+     Offender:   [{pid,undefined},{id,'Elixir.Genstages.Samples.ConsumerSupervisor'},{mfargs,{'Elixir.Genstages.Samples.ConsumerSupervisor',start_link,[]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-07-25 00:50:58 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.408.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,'Elixir.Genstages.Samples.ConsumerSupervisor',noproc}},{'Elixir.Genstages.Application',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,134}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.407.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.409.0>,normal}]
+    links: [<0.407.0>,<0.33.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 376
+    stack_size: 27
+    reductions: 194
+  neighbours:
+2018-07-25 00:52:47 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    child_terminated
+     Reason:     normal
+     Offender:   [{pid,<0.211.0>},{id,'Elixir.Logger.ErrorHandler'},{mfargs,{'Elixir.Logger.Watcher',start_link,[{error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-07-25 00:52:48 =CRASH REPORT====
+  crasher:
+    initial call: supervisor:Elixir.Genstages.Samples.ConsumerSupervisor/1
+    pid: <0.307.0>
+    registered_name: []
+    exception exit: {noproc,[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,349}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['Elixir.Genstages.Supervisor',<0.272.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.273.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 376
+    stack_size: 27
+    reductions: 373
+  neighbours:
+2018-07-25 00:52:48 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Genstages.Supervisor'}
+     Context:    start_error
+     Reason:     noproc
+     Offender:   [{pid,undefined},{id,'Elixir.Genstages.Samples.ConsumerSupervisor'},{mfargs,{'Elixir.Genstages.Samples.ConsumerSupervisor',start_link,[]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-07-25 00:52:48 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.271.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,'Elixir.Genstages.Samples.ConsumerSupervisor',noproc}},{'Elixir.Genstages.Application',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,134}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.270.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.272.0>,normal}]
+    links: [<0.270.0>,<0.33.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 376
+    stack_size: 27
+    reductions: 192
+  neighbours:
+2018-07-25 00:53:41 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    child_terminated
+     Reason:     normal
+     Offender:   [{pid,<0.211.0>},{id,'Elixir.Logger.ErrorHandler'},{mfargs,{'Elixir.Logger.Watcher',start_link,[{error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-07-25 00:55:10 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    child_terminated
+     Reason:     normal
+     Offender:   [{pid,<0.211.0>},{id,'Elixir.Logger.ErrorHandler'},{mfargs,{'Elixir.Logger.Watcher',start_link,[{error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-07-25 00:55:26 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    child_terminated
+     Reason:     normal
+     Offender:   [{pid,<0.203.0>},{id,'Elixir.Logger.ErrorHandler'},{mfargs,{'Elixir.Logger.Watcher',start_link,[{error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-07-25 00:56:42 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.GenStage:init/1
+    pid: <0.302.0>
+    registered_name: []
+    exception exit: {{bad_return_value,{ok,[{'Elixir.Genstages.Samples.Consumer',{'Elixir.Genstages.Samples.Consumer',start_link,[]},temporary,5000,worker,['Elixir.Genstages.Samples.Consumer']}],[{strategy,one_for_one},{subscribe_to,[{'Elixir.Genstages.Samples.Producer',[{min_demand,1},{max_demand,10}]}]}]}},[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,349}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.299.0>,<0.58.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.299.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 376
+    stack_size: 27
+    reductions: 203
+  neighbours:
+    neighbour: [{pid,<0.299.0>},{registered_name,[]},{initial_call,{'Elixir.IEx.Evaluator',init,['Argument__1','Argument__2','Argument__3','Argument__4']}},{current_function,{proc_lib,sync_wait,2}},{ancestors,[<0.58.0>]},{message_queue_len,1},{links,[<0.302.0>]},{trap_exit,false},{status,runnable},{heap_size,2586},{stack_size,49},{reductions,3656},{current_stacktrace,[{proc_lib,sync_wait,2,[{file,"proc_lib.erl"},{line,348}]},{erl_eval,do_apply,6,[{file,"erl_eval.erl"},{line,670}]},{erl_eval,expr,5,[{file,"erl_eval.erl"},{line,438}]},{elixir,eval_forms,4,[{file,"src/elixir.erl"},{line,239}]},{'Elixir.IEx.Evaluator',handle_eval,5,[{file,"lib/iex/evaluator.ex"},{line,231}]},{'Elixir.IEx.Evaluator',do_eval,3,[{file,"lib/iex/evaluator.ex"},{line,212}]},{'Elixir.IEx.Evaluator',eval,3,[{file,"lib/iex/evaluator.ex"},{line,190}]},{'Elixir.IEx.Evaluator',loop,1,[{file,"lib/iex/evaluator.ex"},{line,89}]},{'Elixir.IEx.Evaluator',init,4,[{file,"lib/iex/evaluator.ex"},{line,24}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}]
+2018-07-25 00:56:48 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.GenStage:init/1
+    pid: <0.305.0>
+    registered_name: []
+    exception exit: {{bad_return_value,{ok,[{'Elixir.Genstages.Samples.Consumer',{'Elixir.Genstages.Samples.Consumer',start_link,[]},temporary,5000,worker,['Elixir.Genstages.Samples.Consumer']}],[{strategy,one_for_one},{subscribe_to,[{'Elixir.Genstages.Samples.Producer',[{min_demand,1},{max_demand,10}]}]}]}},[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,349}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.303.0>,<0.58.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.303.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 376
+    stack_size: 27
+    reductions: 203
+  neighbours:
+    neighbour: [{pid,<0.303.0>},{registered_name,[]},{initial_call,{'Elixir.IEx.Evaluator',init,['Argument__1','Argument__2','Argument__3','Argument__4']}},{current_function,{proc_lib,sync_wait,2}},{ancestors,[<0.58.0>]},{message_queue_len,1},{links,[<0.305.0>]},{trap_exit,false},{status,runnable},{heap_size,2586},{stack_size,49},{reductions,2533},{current_stacktrace,[{proc_lib,sync_wait,2,[{file,"proc_lib.erl"},{line,348}]},{erl_eval,do_apply,6,[{file,"erl_eval.erl"},{line,670}]},{erl_eval,expr,5,[{file,"erl_eval.erl"},{line,438}]},{elixir,eval_forms,4,[{file,"src/elixir.erl"},{line,239}]},{'Elixir.IEx.Evaluator',handle_eval,5,[{file,"lib/iex/evaluator.ex"},{line,231}]},{'Elixir.IEx.Evaluator',do_eval,3,[{file,"lib/iex/evaluator.ex"},{line,212}]},{'Elixir.IEx.Evaluator',eval,3,[{file,"lib/iex/evaluator.ex"},{line,190}]},{'Elixir.IEx.Evaluator',loop,1,[{file,"lib/iex/evaluator.ex"},{line,89}]},{'Elixir.IEx.Evaluator',init,4,[{file,"lib/iex/evaluator.ex"},{line,24}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}]
+2018-07-25 00:56:53 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.GenStage:init/1
+    pid: <0.308.0>
+    registered_name: []
+    exception exit: {{bad_return_value,{ok,[{'Elixir.Genstages.Samples.Consumer',{'Elixir.Genstages.Samples.Consumer',start_link,[]},temporary,5000,worker,['Elixir.Genstages.Samples.Consumer']}],[{strategy,one_for_one},{subscribe_to,[{'Elixir.Genstages.Samples.Producer',[{min_demand,1},{max_demand,10}]}]}]}},[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,349}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.306.0>,<0.58.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.306.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 376
+    stack_size: 27
+    reductions: 203
+  neighbours:
+    neighbour: [{pid,<0.306.0>},{registered_name,[]},{initial_call,{'Elixir.IEx.Evaluator',init,['Argument__1','Argument__2','Argument__3','Argument__4']}},{current_function,{proc_lib,sync_wait,2}},{ancestors,[<0.58.0>]},{message_queue_len,1},{links,[<0.308.0>]},{trap_exit,false},{status,runnable},{heap_size,2586},{stack_size,49},{reductions,2533},{current_stacktrace,[{proc_lib,sync_wait,2,[{file,"proc_lib.erl"},{line,348}]},{erl_eval,do_apply,6,[{file,"erl_eval.erl"},{line,670}]},{erl_eval,expr,5,[{file,"erl_eval.erl"},{line,438}]},{elixir,eval_forms,4,[{file,"src/elixir.erl"},{line,239}]},{'Elixir.IEx.Evaluator',handle_eval,5,[{file,"lib/iex/evaluator.ex"},{line,231}]},{'Elixir.IEx.Evaluator',do_eval,3,[{file,"lib/iex/evaluator.ex"},{line,212}]},{'Elixir.IEx.Evaluator',eval,3,[{file,"lib/iex/evaluator.ex"},{line,190}]},{'Elixir.IEx.Evaluator',loop,1,[{file,"lib/iex/evaluator.ex"},{line,89}]},{'Elixir.IEx.Evaluator',init,4,[{file,"lib/iex/evaluator.ex"},{line,24}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}]
+2018-07-25 00:56:57 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.GenStage:init/1
+    pid: <0.311.0>
+    registered_name: []
+    exception exit: {{bad_return_value,{ok,[{'Elixir.Genstages.Samples.Consumer',{'Elixir.Genstages.Samples.Consumer',start_link,[]},temporary,5000,worker,['Elixir.Genstages.Samples.Consumer']}],[{strategy,one_for_one},{subscribe_to,[{'Elixir.Genstages.Samples.Producer',[{min_demand,1},{max_demand,10}]}]}]}},[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,349}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.309.0>,<0.58.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.309.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 376
+    stack_size: 27
+    reductions: 203
+  neighbours:
+    neighbour: [{pid,<0.309.0>},{registered_name,[]},{initial_call,{'Elixir.IEx.Evaluator',init,['Argument__1','Argument__2','Argument__3','Argument__4']}},{current_function,{proc_lib,sync_wait,2}},{ancestors,[<0.58.0>]},{message_queue_len,1},{links,[<0.311.0>]},{trap_exit,false},{status,runnable},{heap_size,2586},{stack_size,49},{reductions,2533},{current_stacktrace,[{proc_lib,sync_wait,2,[{file,"proc_lib.erl"},{line,348}]},{erl_eval,do_apply,6,[{file,"erl_eval.erl"},{line,670}]},{erl_eval,expr,5,[{file,"erl_eval.erl"},{line,438}]},{elixir,eval_forms,4,[{file,"src/elixir.erl"},{line,239}]},{'Elixir.IEx.Evaluator',handle_eval,5,[{file,"lib/iex/evaluator.ex"},{line,231}]},{'Elixir.IEx.Evaluator',do_eval,3,[{file,"lib/iex/evaluator.ex"},{line,212}]},{'Elixir.IEx.Evaluator',eval,3,[{file,"lib/iex/evaluator.ex"},{line,190}]},{'Elixir.IEx.Evaluator',loop,1,[{file,"lib/iex/evaluator.ex"},{line,89}]},{'Elixir.IEx.Evaluator',init,4,[{file,"lib/iex/evaluator.ex"},{line,24}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}]
+2018-07-25 00:58:12 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.GenStage:init/1
+    pid: <0.315.0>
+    registered_name: []
+    exception exit: {{bad_return_value,{ok,[{'Elixir.Genstages.Samples.Consumer',{'Elixir.Genstages.Samples.Consumer',start_link,[]},temporary,5000,worker,['Elixir.Genstages.Samples.Consumer']}],[{strategy,one_for_one},{subscribe_to,[{'Elixir.Genstages.Samples.Producer',[{min_demand,1},{max_demand,10}]}]}]}},[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,349}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.312.0>,<0.58.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.312.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 376
+    stack_size: 27
+    reductions: 203
+  neighbours:
+    neighbour: [{pid,<0.312.0>},{registered_name,[]},{initial_call,{'Elixir.IEx.Evaluator',init,['Argument__1','Argument__2','Argument__3','Argument__4']}},{current_function,{proc_lib,sync_wait,2}},{ancestors,[<0.58.0>]},{message_queue_len,1},{links,[<0.315.0>]},{trap_exit,false},{status,runnable},{heap_size,2586},{stack_size,49},{reductions,2533},{current_stacktrace,[{proc_lib,sync_wait,2,[{file,"proc_lib.erl"},{line,348}]},{erl_eval,do_apply,6,[{file,"erl_eval.erl"},{line,670}]},{erl_eval,expr,5,[{file,"erl_eval.erl"},{line,438}]},{elixir,eval_forms,4,[{file,"src/elixir.erl"},{line,239}]},{'Elixir.IEx.Evaluator',handle_eval,5,[{file,"lib/iex/evaluator.ex"},{line,231}]},{'Elixir.IEx.Evaluator',do_eval,3,[{file,"lib/iex/evaluator.ex"},{line,212}]},{'Elixir.IEx.Evaluator',eval,3,[{file,"lib/iex/evaluator.ex"},{line,190}]},{'Elixir.IEx.Evaluator',loop,1,[{file,"lib/iex/evaluator.ex"},{line,89}]},{'Elixir.IEx.Evaluator',init,4,[{file,"lib/iex/evaluator.ex"},{line,24}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}]
+2018-07-25 00:58:14 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.GenStage:init/1
+    pid: <0.318.0>
+    registered_name: []
+    exception exit: {{bad_return_value,{ok,[{'Elixir.Genstages.Samples.Consumer',{'Elixir.Genstages.Samples.Consumer',start_link,[]},temporary,5000,worker,['Elixir.Genstages.Samples.Consumer']}],[{strategy,one_for_one},{subscribe_to,[{'Elixir.Genstages.Samples.Producer',[{min_demand,1},{max_demand,10}]}]}]}},[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,349}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.316.0>,<0.58.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.316.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 376
+    stack_size: 27
+    reductions: 203
+  neighbours:
+    neighbour: [{pid,<0.316.0>},{registered_name,[]},{initial_call,{'Elixir.IEx.Evaluator',init,['Argument__1','Argument__2','Argument__3','Argument__4']}},{current_function,{proc_lib,sync_wait,2}},{ancestors,[<0.58.0>]},{message_queue_len,1},{links,[<0.318.0>]},{trap_exit,false},{status,runnable},{heap_size,2586},{stack_size,49},{reductions,2533},{current_stacktrace,[{proc_lib,sync_wait,2,[{file,"proc_lib.erl"},{line,348}]},{erl_eval,do_apply,6,[{file,"erl_eval.erl"},{line,670}]},{erl_eval,expr,5,[{file,"erl_eval.erl"},{line,438}]},{elixir,eval_forms,4,[{file,"src/elixir.erl"},{line,239}]},{'Elixir.IEx.Evaluator',handle_eval,5,[{file,"lib/iex/evaluator.ex"},{line,231}]},{'Elixir.IEx.Evaluator',do_eval,3,[{file,"lib/iex/evaluator.ex"},{line,212}]},{'Elixir.IEx.Evaluator',eval,3,[{file,"lib/iex/evaluator.ex"},{line,190}]},{'Elixir.IEx.Evaluator',loop,1,[{file,"lib/iex/evaluator.ex"},{line,89}]},{'Elixir.IEx.Evaluator',init,4,[{file,"lib/iex/evaluator.ex"},{line,24}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}]
+2018-07-25 00:58:37 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    child_terminated
+     Reason:     normal
+     Offender:   [{pid,<0.211.0>},{id,'Elixir.Logger.ErrorHandler'},{mfargs,{'Elixir.Logger.Watcher',start_link,[{error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-07-25 00:58:53 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    child_terminated
+     Reason:     normal
+     Offender:   [{pid,<0.211.0>},{id,'Elixir.Logger.ErrorHandler'},{mfargs,{'Elixir.Logger.Watcher',start_link,[{error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-07-25 00:59:28 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    child_terminated
+     Reason:     normal
+     Offender:   [{pid,<0.348.0>},{id,'Elixir.Logger.ErrorHandler'},{mfargs,{'Elixir.Logger.Watcher',start_link,[{error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-07-25 01:00:30 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    child_terminated
+     Reason:     normal
+     Offender:   [{pid,<0.348.0>},{id,'Elixir.Logger.ErrorHandler'},{mfargs,{'Elixir.Logger.Watcher',start_link,[{error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+

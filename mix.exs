@@ -36,7 +36,8 @@ defmodule Genstages.Mixfile do
       {:phoenix_pubsub, "~> 1.0"},
       {:gettext, "~> 0.11"},
       {:cowboy, "~> 1.0"},
-      {:gen_stage, "~> 0.14"}
+      {:gen_stage, "~> 0.14"},
+      {:amqp, "~> 1.0"}
     ]
   end
 end
