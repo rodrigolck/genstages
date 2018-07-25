@@ -20,7 +20,7 @@ defmodule Genstages.Samples.ConsumerMonitor do
   end
 
   def handle_call({:is_processing, message}, _from, state) do
-    {:reply, Map.values(state) |> Enum.member?(message), state}
+    {:reply, Map.values(state) |> List.flatten |> Enum.member?(message), state}
   end
 
   def handle_call({:register_message, message, pid}, _from, state) do

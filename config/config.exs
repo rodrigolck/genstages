@@ -21,7 +21,7 @@ config :logger, :console,
 config :amqp,
   url: "amqp://guest:guest@localhost"
 
-# Possible scenarios: ["P-C", "P-PC-C", "P-CS", "B-C", "RMQP-CS"]
+# Possible scenarios: ["P-C", "P-PC-C", "P-CS", "RMQP-CS", "B-C"]
 config :genstages, :scenario, "P-C"
 
 # Import environment specific config. This must remain at the bottom

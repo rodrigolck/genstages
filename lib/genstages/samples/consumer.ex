@@ -14,7 +14,7 @@ defmodule Genstages.Samples.Consumer do
   end
 
   def handle_events(events, _from, :ok) do
-    # Genstages.Samples.ConsumerMonitor.register_message(events)
+    Genstages.Samples.ConsumerMonitor.register_message(events)
 
     IO.puts "Start Stage Consumer"
 

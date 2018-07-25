@@ -29,5 +29,7 @@ GenStage.sync_subscribe(c, to: b)
 for x <- 1..100 do
   Genstages.RabbitMQ.Client.publish(x)
 end
+
+Genstages.Samples.ConsumerMonitor.is_processing(1)
 ```
 
