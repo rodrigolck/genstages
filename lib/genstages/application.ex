@@ -52,6 +52,15 @@ defmodule Genstages.Application do
     ]
   end
 
+  def scenario_workers("RMQP-CS") do
+    import Supervisor.Spec
+    [
+      supervisor(Genstages.RabbitMQ.Supervisor, []),
+      worker(Genstages.Samples.RabbitMQProducer, []),
+      worker(Genstages.Samples.ConsumerSupervisor, [])
+    ]
+  end
+
   def scenario_workers("B-C") do
     import Supervisor.Spec
     [
@@ -61,15 +70,6 @@ defmodule Genstages.Application do
       worker(Genstages.Samples.Consumer, [], id: 3),
       worker(Genstages.Samples.Consumer, [], id: 4),
       worker(Genstages.Samples.Consumer, [], id: 5)
-    ]
-  end
-
-  def scenario_workers("RMQP-CS") do
-    import Supervisor.Spec
-    [
-      supervisor(Genstages.RabbitMQ.Supervisor, []),
-      worker(Genstages.Samples.RabbitMQProducer, []),
-      worker(Genstages.Samples.ConsumerSupervisor, [])
     ]
   end
 
