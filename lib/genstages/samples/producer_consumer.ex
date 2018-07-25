@@ -10,7 +10,8 @@ defmodule Genstages.Samples.ProducerConsumer do
   end
 
   def handle_events(events, _from, :ok) do
-    IO.puts "Stage ProducerConsumer: #{length(events)}"
+    IO.puts "Stage ProducerConsumer Length: #{length(events)}"
+    IO.puts "Stage ProducerConsumer Value: #{inspect(events, charlists: :as_lists)}"
     {:noreply, events, :ok}
   end
 end
